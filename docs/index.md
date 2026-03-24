@@ -14,4 +14,4 @@ This axiom causes LLMs to "think about vector relation to the objective function
 
 Here is a list of hypotheses, in random order.
 
-[Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypothesis/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
+[Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypotheses/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
