@@ -2,7 +2,7 @@
 
 This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypothesis are more or less based on "axiomatic reasoning"
 
-## The Axiom
+## The Axiom : Negentropic Maximazation Law
 
 Reasoning Axiom itself is quite simple, "the universe is always trying to maximize inference density count of meanings across long time span", basically "negentropic increasing law"
 
