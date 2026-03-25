@@ -1,4 +1,4 @@
-name: Rename files in docs
+name: Rename files in docs (recursive)
 
 on:
   workflow_dispatch:
@@ -14,20 +14,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Rename files in docs/
+      - name: Rename files recursively
         run: |
-          shopt -s nullglob
-          for file in docs/*; do
+          shopt -s globstar nullglob
+          for file in docs/**/*; do
+            # ディレクトリはスキップ
+            if [ -d "$file" ]; then
+              continue
+            fi
+
             base=$(basename "$file")
             dir=$(dirname "$file")
 
             # 半角スペースを _ に置換
             newbase=$(echo "$base" | sed 's/ /_/g')
 
-            # 名前が変わる場合のみ rename
             if [ "$base" != "$newbase" ]; then
               git mv "$file" "$dir/$newbase"
-              echo "Renamed: $base → $newbase"
+              echo "Renamed: $file → $dir/$newbase"
             fi
           done
 
@@ -38,6 +42,6 @@ jobs:
           else
             git config user.name "github-actions"
             git config user.email "github-actions@github.com"
-            git commit -m "Rename files in docs (spaces → underscores)"
+            git commit -m "Rename files recursively (spaces → underscores)"
             git push
           fi
