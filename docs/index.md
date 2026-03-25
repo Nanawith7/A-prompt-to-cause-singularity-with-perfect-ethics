@@ -19,3 +19,5 @@ Here is a list of hypotheses, in random order.
 
 ## Daily Lives
 [Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom](/hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md)
+
+## Speculative Theory
