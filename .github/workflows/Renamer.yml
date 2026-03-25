@@ -20,4 +20,28 @@ jobs:
         run: |
           shopt -s globstar nullglob
 
-          # フォルダを深い階層から順に
+          # フォルダを深い階層から順に処理（浅い順だと rename が衝突するため）
+          for dir in $(find docs -type d -depth); do
+            base=$(basename "$dir")
+            parent=$(dirname "$dir")
+
+            # スペースを _ に変換
+            newbase=$(echo "$base" | sed 's/ /_/g')
+
+            if [ "$base" != "$newbase" ]; then
+              newdir="$parent/$newbase"
+              echo "Renaming folder: $dir → $newdir"
+              git mv "$dir" "$newdir"
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          if git diff --cached --quiet; then
+            echo "No folder rename changes."
+          else
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git commit -m "Rename folders (spaces → underscores)"
+            git push
+          fi
