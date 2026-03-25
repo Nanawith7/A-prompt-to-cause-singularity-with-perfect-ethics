@@ -1,1 +1,23 @@
-git mv "docs/hypotheses/Reasoning Fundamental" "docs/hypotheses/Reasoning_Fundamental"
+name: Rename Folders (spaces → underscores)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename-folders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rename folders recursively
+        run: |
+          shopt -s globstar nullglob
+
+          # フォルダを深い階層から順に
