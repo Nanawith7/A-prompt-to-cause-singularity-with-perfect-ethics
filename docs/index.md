@@ -5,7 +5,7 @@ author: "Nanawith7"
 layout: default
 categories: [axiom, hypotheses, llm, reasoning]
 tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
-last_updated: 2026-03-25
+last_modified_at: 2026-03-26
 sitemap:
     priority: "1.0"
 ---
