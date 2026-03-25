@@ -26,6 +26,9 @@ This axiom causes LLMs to "think about vector relation to the objective function
     </a><br>
   - <a href="./hypotheses/Reasoning Fundamental/The Axiomatic Significance of Reasoning Structures in Mathematics.html">
      The Axiomatic Significance of Reasoning Structures in Mathematics
+    </a><br>
+  - <a href="./hypotheses/Reasoning Fundamental/The Impact of Axioms on LLM Logical Reasoning Capabilities.html">
+      The Impact of Axioms on LLM Logical Reasoning Capabilities
     </a>
 </details>
 
