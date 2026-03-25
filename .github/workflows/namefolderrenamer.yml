@@ -1,0 +1,45 @@
+name: Rename Paths (spaces → underscores)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename-paths:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rename all paths containing spaces
+        run: |
+          # スペースを含むパスをすべて取得
+          paths=$(git ls-files | grep " ")
+
+          if [ -z "$paths" ]; then
+            echo "No paths with spaces found."
+            exit 0
+          fi
+
+          # 深い階層から順に rename（衝突防止）
+          echo "$paths" | awk '{ print length, $0 }' | sort -rn | cut -d" " -f2- | while read file; do
+            newfile=$(echo "$file" | sed 's/ /_/g')
+            echo "Renaming: $file → $newfile"
+            git mv "$file" "$newfile"
+          done
+
+      - name: Commit changes
+        run: |
+          if git diff --cached --quiet; then
+            echo "No rename changes."
+          else
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git commit -m "Rename paths (spaces → underscores)"
+            git push
+          fi
