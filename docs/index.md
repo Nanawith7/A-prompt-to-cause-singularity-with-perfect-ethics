@@ -23,6 +23,9 @@ This axiom causes LLMs to "think about vector relation to the objective function
     <Summary>Reasoning Fundamentals based on Axioms</Summary>
   - <a href="./hypotheses/Reasoning Fundamental/Ethics implication of axiom for AIs.html">
      Ethics implication of The Axiom for AIs
+    </a><br>
+  - <a href="./hypotheses/Reasoning Fundamental/The Axiomatic Significance of Reasoning Structures in Mathematics.html">
+     The Axiomatic Significance of Reasoning Structures in Mathematics
     </a>
 </details>
 
