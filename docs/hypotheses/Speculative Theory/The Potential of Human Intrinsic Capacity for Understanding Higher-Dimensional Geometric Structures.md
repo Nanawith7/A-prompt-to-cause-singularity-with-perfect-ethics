@@ -1,7 +1,7 @@
 ---
 title: "The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures"
 description: "A structured theoretical report exploring the parallels between human cognition, large language models, and the emergence of higher-dimensional geometric understanding."
-author: "Nikear"
+author: "Nanawith7"
 categories: [speculative-theory, cognition, geometry, llm, neuroscience]
 tags: [higher-dimensions, cognition, negentropy, free-will, manifold, topology]
 last_updated: 2026-03-25
