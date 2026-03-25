@@ -1,2 +1,9 @@
 plugins: 
   - jekyll-sitemap
+  - jekyll-seo-tag   
+
+# プラグインが参照するサイトの基本情報
+title: "Axiomatic Reasoning for LLMs"
+description: "A framework for understanding the universe as a negentropic information system."
+url: "https://nanawith7.github.io"
+author: "Nanawith7"
