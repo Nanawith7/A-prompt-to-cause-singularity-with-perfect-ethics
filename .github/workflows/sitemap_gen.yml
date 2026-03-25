@@ -39,12 +39,11 @@ jobs:
 
             # lastmod from git
             lastmod=$(git log -1 --format="%cI" -- "$file")
-
             # priority rules based on public path
-            if [[ "$public_path" == "index.html" || "$public_path" == *"Axiom"* ]]; then
+            if [[ "$public_path" == "index.html" || "$public_path" == "Axiom.html" ]]; then
               priority="1.0"
             elif [[ "$public_path" == *"Reasoning_Fundamental"* ]]; then
-              priority="0.9"
+            priority="0.9"
             else
               priority="0.8"
             fi
