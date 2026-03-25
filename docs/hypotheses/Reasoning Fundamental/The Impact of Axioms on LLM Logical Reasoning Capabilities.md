@@ -5,7 +5,9 @@ author: "Nanawith7"
 layout: default
 categories: [axiom, llm, reasoning, information-theory, topology]
 tags: [negentropy, axiomatic-reasoning, llm-architecture, persistent-homology, computational-irreducibility]
-last_updated: 2026-03-25
+last_updated: 2026-03-26
+sitemap:
+    priority: "0.9"
 ---
 
 
