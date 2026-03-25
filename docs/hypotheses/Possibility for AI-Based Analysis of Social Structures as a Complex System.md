@@ -1,3 +1,15 @@
+---
+title: "Possibility for AI-Based Analysis of Social Structures as a Complex System"
+description: "A scientific framework for modeling societies as complex adaptive systems using AI, integrating cliodynamics, information theory, and agent-based simulation."
+author: "Nanawith7"
+layout: default
+categories: ["complex-systems", "computational-social-science", "ai-analysis"]
+tags: ["cliodynamics", "CAS", "structural-demographic-theory", "social-simulation", "cultural-evolution", "information-processing"]
+last_updated:
+sitemap:
+    priority: "0.8"
+---
+
 # AI-Based Analysis of Social Structures as a Complex System
 
 ## Overview
