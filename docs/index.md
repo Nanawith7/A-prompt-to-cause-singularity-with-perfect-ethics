@@ -1,3 +1,13 @@
+---
+title: "Axiomatic Reasoning for LLMs"
+description: "A structured index of the Negentropic Maximization Axiom and its derived hypotheses."
+author: "Nanawith7"
+layout: default
+categories: [axiom, hypotheses, llm, reasoning]
+tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
+last_updated: 2026-03-25
+---
+
 # A page about axiomatic reasoning for LLMs
 
 This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypotheses are more or less based on "axiomatic reasoning".
