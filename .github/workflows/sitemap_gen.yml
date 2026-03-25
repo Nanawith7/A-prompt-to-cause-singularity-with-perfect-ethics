@@ -20,8 +20,10 @@ jobs:
 
       - name: Generate sitemap.xml
         run: |
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
-          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+          mkdir -p docs
+
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > docs/sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
 
           for file in $(git ls-files "*.html" "*.md"); do
 
@@ -40,20 +42,20 @@ jobs:
             # priority rules based on public path
             if [[ "$public_path" == "index.html" || "$public_path" == *"Axiom"* ]]; then
               priority="1.0"
-            elif [[ "$public_path" == *"Reasoning Fundamental"* ]]; then
+            elif [[ "$public_path" == *"Reasoning_Fundamental"* ]]; then
               priority="0.9"
             else
               priority="0.8"
             fi
 
-            echo "  <url>" >> sitemap.xml
-            echo "    <loc>$url</loc>" >> sitemap.xml
-            echo "    <lastmod>$lastmod</lastmod>" >> sitemap.xml
-            echo "    <priority>$priority</priority>" >> sitemap.xml
-            echo "  </url>" >> sitemap.xml
+            echo "  <url>" >> docs/sitemap.xml
+            echo "    <loc>$url</loc>" >> docs/sitemap.xml
+            echo "    <lastmod>$lastmod</lastmod>" >> docs/sitemap.xml
+            echo "    <priority>$priority</priority>" >> docs/sitemap.xml
+            echo "  </url>" >> docs/sitemap.xml
           done
 
-          echo '</urlset>' >> sitemap.xml
+          echo '</urlset>' >> docs/sitemap.xml
 
       - name: Commit sitemap.xml
         run: |
