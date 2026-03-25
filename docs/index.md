@@ -21,3 +21,4 @@ Here is a list of hypotheses, in random order.
 [Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom](/hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md)
 
 ## Speculative Theory
+[Hidden Possibility of Human–AI Co‑Intelligence](/hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.md)
