@@ -1,0 +1,61 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap.xml
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+
+          for file in $(git ls-files "*.html" "*.md"); do
+
+            # remove docs/ prefix for public URL
+            public_path="${file#docs/}"
+
+            # convert .md → .html
+            public_path="${public_path%.*}.html"
+
+            # construct public URL
+            url="https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/$public_path"
+
+            # lastmod from git
+            lastmod=$(git log -1 --format="%cI" -- "$file")
+
+            # priority rules based on public path
+            if [[ "$public_path" == "index.html" || "$public_path" == *"Axiom"* ]]; then
+              priority="1.0"
+            elif [[ "$public_path" == *"Reasoning Fundamental"* ]]; then
+              priority="0.9"
+            else
+              priority="0.8"
+            fi
+
+            echo "  <url>" >> sitemap.xml
+            echo "    <loc>$url</loc>" >> sitemap.xml
+            echo "    <lastmod>$lastmod</lastmod>" >> sitemap.xml
+            echo "    <priority>$priority</priority>" >> sitemap.xml
+            echo "  </url>" >> sitemap.xml
+          done
+
+          echo '</urlset>' >> sitemap.xml
+
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Update sitemap.xml" || echo "No changes"
+          git push
