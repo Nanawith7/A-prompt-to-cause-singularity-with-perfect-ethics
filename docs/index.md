@@ -72,7 +72,11 @@ Here is a list of hypotheses, in random order.
 # Reasoning Fundamental
 
 {%- comment -%}
-  0. ページ一覧から不要なものを除外
+  0. Collect all pages and exclude:
+     - root-level index.md / axiom.md
+     - non-.md files (e.g., css)
+     - files not inside a folder (we only want /folder/file.md)
+     This ensures only valid content pages remain.
 {%- endcomment -%}
 
 {% assign pages = site.pages
@@ -83,7 +87,8 @@ Here is a list of hypotheses, in random order.
 %}
 
 {%- comment -%}
-  1. フォルダ名でグループ化
+  1. Group pages by their top-level folder.
+     Example: /Reasoning_Fundamental/Axiom.md → "Reasoning_Fundamental"
 {%- endcomment -%}
 
 {% assign grouped = pages
@@ -91,7 +96,8 @@ Here is a list of hypotheses, in random order.
 %}
 
 {%- comment -%}
-  2. 不要フォルダ名を除外
+  2. Remove unwanted folder names (css, index.md, axiom.md)
+     These sometimes appear due to Jekyll treating them as pseudo-folders.
 {%- endcomment -%}
 
 {% assign cleaned = grouped
@@ -103,10 +109,25 @@ Here is a list of hypotheses, in random order.
 {% assign sorted = cleaned | sort: "name" %}
 
 {%- comment -%}
-  3. Reasoning_Fundamental を最上部に表示
+  3. Extract the Reasoning_Fundamental folder manually.
+     Liquid cannot use filters (| downcase) inside where_exp,
+     so we must loop and compare safely.
 {%- endcomment -%}
 
-{% assign rf = sorted | where_exp: "f", "f.name | downcase == 'Reasoning_Fundamental'" | first %}
+{% assign rf = nil %}
+{% for f in sorted %}
+  {% if f.name | downcase == "reasoning_fundamental" %}
+    {% assign rf = f %}
+  {% endif %}
+{% endfor %}
+
+{%- comment -%}
+  4. Render Reasoning_Fundamental at the top.
+     Format:
+       ## FolderName
+       <details open> ... </details>
+{%- endcomment -%}
+
 {% if rf %}
 ## Reasoning Fundamental
 <details open>
@@ -120,11 +141,12 @@ Here is a list of hypotheses, in random order.
 {% endif %}
 
 {%- comment -%}
-  4. その他のフォルダを A→Z で表示
+  5. Render all other folders in A→Z order.
+     Same format as above, but <details> is closed by default.
 {%- endcomment -%}
 
 {% for folder in sorted %}
-  {% unless folder.name | downcase == "Reasoning_Fundamental" %}
+  {% unless folder.name | downcase == "reasoning_fundamental" %}
 ## {{ folder.name | capitalize }}
 <details>
   <summary>open</summary>
@@ -136,6 +158,7 @@ Here is a list of hypotheses, in random order.
 </details>
   {% endunless %}
 {% endfor %}
+
 
 
 
