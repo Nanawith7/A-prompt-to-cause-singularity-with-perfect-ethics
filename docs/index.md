@@ -74,8 +74,8 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-{% assign folders = site.pages | where_exp: "p", "p.path contains 'docs/'" %}
-{% assign grouped = folders | group_by_exp: "p", "p.path | split: '/' | slice: 1,1" %}
+{% assign pages = site.pages | where_exp: "p", "p.path != '/index.md'" %}
+{% assign grouped = pages | group_by_exp: "p", "p.path | split: '/' | slice: 1,1" %}
 {% assign sorted = grouped | sort: "name" %}
 
 {% for folder in sorted %}
