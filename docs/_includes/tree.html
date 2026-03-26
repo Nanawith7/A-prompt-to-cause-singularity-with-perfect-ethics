@@ -1,103 +1,100 @@
-{%- comment -%}
-  node（ハッシュ）を受け取り、フォルダとファイルを描画する。
-  再帰 include を使わず、1 ファイル内で再帰処理を行う。
-{%- endcomment -%}
+{% assign node = include.node %}
 
-{%- assign node = include.node -%}
-
-{%- if node == nil -%}
+{% if node == nil %}
   <p>node is nil, cannot render tree</p>
-{%- else -%}
+{% else %}
 
-  {%- assign folders = "" | split: "" -%}
-  {%- assign files = node["_files"] -%}
+  {# ========== 1階層目: ルートフォルダ ========== #}
+  {% for folder in node %}
+    {% if folder[0] != "_files" %}
+      <h3>{{ folder[0] | replace: "_", " " }}</h3>
+      <details open>
+        <summary>open</summary>
 
-  {%- for key in node %}
-    {%- if key != "_files" %}
-      {%- assign folders = folders | push: key -%}
-    {%- endif %}
-  {%- endfor %}
+        {% assign folder_data = folder[1] %}
+        {% assign files_1 = folder_data._files %}
 
-  {%- comment -%}
-    フォルダ描画
-  {%- endcomment -%}
-
-  {%- for folder in folders %}
-    <h3>{{ folder | replace: "_", " " }}</h3>
-    <details open>
-      <summary>open</summary>
-
-      {%- assign next = node[folder] -%}
-
-      {%- capture subtree -%}
-        {%- assign subfolders = "" | split: "" -%}
-        {%- assign subfiles = next["_files"] -%}
-
-        {%- for k in next %}
-          {%- if k != "_files" %}
-            {%- assign subfolders = subfolders | push: k -%}
-          {%- endif %}
-        {%- endfor %}
-
-        {%- for sf in subfolders %}
-          <h4>{{ sf | replace: "_", " " }}</h4>
-          <details>
-            <summary>open</summary>
-
-            {%- assign next2 = next[sf] -%}
-
-            {%- capture subsubtree -%}
-              {%- assign subsubfolders = "" | split: "" -%}
-              {%- assign subsubfiles = next2["_files"] -%}
-
-              {%- for kk in next2 %}
-                {%- if kk != "_files" %}
-                  {%- assign subsubfolders = subsubfolders | push: kk -%}
-                {%- endif %}
-              {%- endfor %}
-
-              {%- for ssf in subsubfolders %}
-                <h5>{{ ssf | replace: "_", " " }}</h5>
-                <!-- さらに深い階層が必要ならここに同じ構造を追加 -->
-              {%- endfor %}
-
-              {%- if subsubfiles %}
-                <ul>
-                  {%- for item in subsubfiles %}
-                    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-                  {%- endfor %}
-                </ul>
-              {%- endif %}
-            {%- endcapture -%}
-
-            {{ subsubtree }}
-          </details>
-        {%- endfor %}
-
-        {%- if subfiles %}
+        {# 1階層目のファイル一覧 #}
+        {% if files_1 %}
           <ul>
-            {%- for item in subfiles %}
-              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-            {%- endfor %}
+            {% for file in files_1 %}
+              <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+            {% endfor %}
           </ul>
-        {%- endif %}
-      {%- endcapture -%}
+        {% endif %}
 
-      {{ subtree }}
+        {# ========== 2階層目: サブフォルダ ========== #}
+        {% for subfolder in folder_data %}
+          {% if subfolder[0] != "_files" %}
+            <h4>{{ subfolder[0] | replace: "_", " " }}</h4>
+            <details>
+              <summary>open</summary>
 
-    </details>
-  {%- endfor %}
+              {% assign subfolder_data = subfolder[1] %}
+              {% assign files_2 = subfolder_data._files %}
 
-  {%- comment -%}
-    ファイル描画
-  {%- endcomment -%}
+              {% if files_2 %}
+                <ul>
+                  {% for file in files_2 %}
+                    <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
 
-  {%- if files %}
-    <ul>
-      {%- for item in files %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-      {%- endfor %}
-    </ul>
-  {%- endif %}
+              {# ========== 3階層目: サブサブフォルダ ========== #}
+              {% for subsubfolder in subfolder_data %}
+                {% if subsubfolder[0] != "_files" %}
+                  <h5>{{ subsubfolder[0] | replace: "_", " " }}</h5>
+                  <details>
+                    <summary>open</summary>
 
-{%- endif -%}
+                    {% assign subsubfolder_data = subsubfolder[1] %}
+                    {% assign files_3 = subsubfolder_data._files %}
+
+                    {% if files_3 %}
+                      <ul>
+                        {% for file in files_3 %}
+                          <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+
+                    {# ========== 4階層目: さらに深いフォルダ ========== #}
+                    {% for subsubsubfolder in subsubfolder_data %}
+                      {% if subsubsubfolder[0] != "_files" %}
+                        <h6>{{ subsubsubfolder[0] | replace: "_", " " }}</h6>
+                        <details>
+                          <summary>open</summary>
+
+                          {% assign subsubsubfolder_data = subsubsubfolder[1] %}
+                          {% assign files_4 = subsubsubfolder_data._files %}
+
+                          {% if files_4 %}
+                            <ul>
+                              {% for file in files_4 %}
+                                <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+
+                        </details>
+                      {% endif %}
+                    {% endfor %}
+                    {# ========== 4階層目ここまで ========== #}
+
+                  </details>
+                {% endif %}
+              {% endfor %}
+              {# ========== 3階層目ここまで ========== #}
+
+            </details>
+          {% endif %}
+        {% endfor %}
+        {# ========== 2階層目ここまで ========== #}
+
+      </details>
+    {% endif %}
+  {% endfor %}
+  {# ========== 1階層目ここまで ========== #}
+
+{% endif %}
