@@ -1,6 +1,6 @@
 <pre>{{ site.data | inspect }}</pre>
 
-{% include test.html %}
+{% include test.html param="hello" %}
 
 {% if node %}
   <pre>{{ node | inspect }}</pre>
