@@ -29,7 +29,7 @@ const tree = walk(ROOT);
 // YAML に変換
 const yamlText = yaml.dump(tree, { lineWidth: -1 });
 
-// 保存
-fs.writeFileSync("_data/tree.yml", yamlText);
+// 保存（Jekyll が読む場所）
+fs.writeFileSync("docs/_data/tree.yml", yamlText);
 
-console.log("Generated _data/tree.yml");
+console.log("Generated docs/_data/tree.yml");
