@@ -2,7 +2,7 @@
 title: "Axiomatic Reasoning for LLMs"
 description: "A structured index of the Negentropic Maximization Axiom and its derived hypotheses."
 author: "Nanawith7"
-layout: default
+layout: none
 categories: [axiom, hypotheses, llm, reasoning]
 tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 ---
