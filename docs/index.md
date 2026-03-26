@@ -72,7 +72,3 @@ Here is a list of hypotheses, in random order.
 # Reasoning Fundamental
 
 {% include tree.html node=site.data.tree %}
-
-<h2>Include test</h2>
-
-{% include test.html %}
