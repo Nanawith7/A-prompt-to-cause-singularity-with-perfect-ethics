@@ -6,7 +6,7 @@ layout: default
 categories: [AI Programming, Large Language Models, Information Theory, Active Inference]
 tags: [negentropy, LLM programming, active inference, information geometry, self-correction, cognitive skills]
 ---
-
+ -_-
 # The Impact of the Negentropy-Oriented Axiom on LLM Programming Capabilities: An Integrated Analysis
 
 ## 1. Introduction: The Axiom as a Unifying Framework
