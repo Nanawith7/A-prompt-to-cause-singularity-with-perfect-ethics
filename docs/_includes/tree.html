@@ -1,0 +1,22 @@
+{% assign node = include.node %}
+
+{% if node == nil %}
+  <p>node is nil, cannot render tree</p>
+{% else %}
+  {% for folder in node %}
+    {% if folder[0] != "_files" %}
+      <h3>{{ folder[0] | replace: "_", " " }}</h3>
+      <details open>
+        <summary>open</summary>
+        {% assign files = folder[1]._files %}
+        {% if files %}
+          <ul>
+            {% for file in files %}
+              <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </details>
+    {% endif %}
+  {% endfor %}
+{% endif %}
