@@ -28,6 +28,6 @@ const tree = walk(ROOT);
 
 const yamlText = yaml.dump(tree, { lineWidth: -1 });
 
-fs.writeFileSync("_data/tree.yml", yamlText);
+fs.writeFileSync("docs/_data/tree.yml", yamlText);
 
-console.log("Generated _data/tree.yml");
+console.log("Generated docs/_data/tree.yml");
