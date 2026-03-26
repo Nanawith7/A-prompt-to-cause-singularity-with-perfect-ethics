@@ -71,14 +71,14 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-{%- comment -%}
+<!--
   0. Collect all valid content pages.
      Exclude:
        - root-level index.md / axiom.md
        - non-.md files (e.g., css)
-       - files not inside a folder (we only want /folder/file.md)
-     This ensures the navigation reflects only meaningful content.
-{%- endcomment -%}
+       - files not inside a folder (/folder/file.md のみ)
+     Liquid コメントは構文をパースするため、HTML コメントを使用して安全化。
+-->
 
 {% assign pages = site.pages
   | where_exp: "p", "p.path contains '.md'"
@@ -87,23 +87,21 @@ Here is a list of hypotheses, in random order.
   | where_exp: "p", "p.path | split: '/' | size > 2"
 %}
 
-{%- comment -%}
+<!--
   1. Group pages by their top-level folder.
-     Example:
-       /Reasoning_Fundamental/Axiom.md → "Reasoning_Fundamental"
-{%- endcomment -%}
+     例: /Reasoning_Fundamental/Axiom.md → "Reasoning_Fundamental"
+-->
 
 {% assign grouped = pages
   | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first"
 %}
 
-{%- comment -%}
-  2. Remove pseudo-folders that Jekyll sometimes generates:
+<!--
+  2. Remove pseudo-folders:
        - css
        - index.md
        - Axiom.md
-     These are not real content folders.
-{%- endcomment -%}
+-->
 
 {% assign cleaned = grouped
   | reject: "name", "css"
@@ -113,12 +111,10 @@ Here is a list of hypotheses, in random order.
 
 {% assign sorted = cleaned | sort: "name" %}
 
-{%- comment -%}
-  3. Extract the Reasoning_Fundamental folder manually.
-     IMPORTANT:
-       Liquid 3.10 cannot use filters (| downcase) inside where_exp.
-       Therefore, we compare using multiple literal strings.
-{%- endcomment -%}
+<!--
+  3. Extract Reasoning_Fundamental manually.
+     Liquid 3.10 の制約により、フィルタを使わずに比較。
+-->
 
 {% assign rf = nil %}
 {% for f in sorted %}
@@ -127,13 +123,9 @@ Here is a list of hypotheses, in random order.
   {% endif %}
 {% endfor %}
 
-{%- comment -%}
+<!--
   4. Render Reasoning_Fundamental at the top.
-     Format:
-       ## FolderName
-       <details open> ... </details>
-     This ensures the most important section is always visible first.
-{%- endcomment -%}
+-->
 
 {% if rf %}
 ## Reasoning Fundamental
@@ -147,11 +139,9 @@ Here is a list of hypotheses, in random order.
 </details>
 {% endif %}
 
-{%- comment -%}
+<!--
   5. Render all other folders in alphabetical order.
-     Same structure as above, but <details> is closed by default.
-     This keeps the UI clean while preserving discoverability.
-{%- endcomment -%}
+-->
 
 {% for folder in sorted %}
   {% unless folder.name == "Reasoning_Fundamental" or folder.name == "reasoning_fundamental" %}
@@ -166,9 +156,6 @@ Here is a list of hypotheses, in random order.
 </details>
   {% endunless %}
 {% endfor %}
-
-
-
 
 
 
