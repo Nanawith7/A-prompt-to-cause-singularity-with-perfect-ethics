@@ -71,77 +71,46 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
+※ このセクションでは、サイト内の .md ファイルを自動的に収集し、
+※ フォルダごとに分類して一覧化します。
+※ Liquid 3.10 の制約（where_exp 内でフィルタ不可）を回避するため、
+※ すべてのフィルタ処理はループ外で行い、手動で分類しています。
+
 {% assign pages = "" | split: "" %}
 {% for p in site.pages %}
-  {% if p.path contains '.md' %}
-    {% if p.path != '/index.md' and p.path != '/axiom.md' %}
-      {% assign parts = p.path | split: '/' %}
-      {% if parts.size > 2 %}
-        {% assign pages = pages | push: p %}
-      {% endif %}
+  {% if p.path contains '.md' and p.path != '/index.md' and p.path != '/axiom.md' %}
+    {% assign parts = p.path | split: '/' %}
+    {% if parts.size > 2 %}
+      {% assign pages = pages | push: p %}
     {% endif %}
   {% endif %}
 {% endfor %}
+
+※ ここでフォルダ名一覧を抽出します。
 
 {% assign folders = "" | split: "" %}
-{% assign folder_map = "" | split: "" %}
-
 {% for p in pages %}
-  {% assign parts = p.path | split: '/' %}
-  {% assign folder = parts[1] %}
-
-  {% unless folders contains folder %}
-    {% assign folders = folders | push: folder %}
+  {% assign folder = p.path | split: '/' | slice: 1,1 | first %}
+  {% unless folder == "" %}
+    {% unless folders contains folder %}
+      {% assign folders = folders | push: folder %}
+    {% endunless %}
   {% endunless %}
 {% endfor %}
 
-{% assign folder_objects = "" | split: "" %}
+{% assign folders = folders | sort %}
 
-{% for folder in folders %}
-  {% assign items = "" | split: "" %}
-  {% for p in pages %}
-    {% assign parts = p.path | split: '/' %}
-    {% if parts[1] == folder %}
-      {% assign items = items | push: p %}
-    {% endif %}
-  {% endfor %}
-  {% assign folder_objects = folder_objects | push: items %}
-  {% assign folder_map = folder_map | push: folder %}
-{% endfor %}
+※ Reasoning_Fundamental を最上位に表示するため、先に抽出します。
 
-{% assign cleaned_folders = "" | split: "" %}
-{% assign cleaned_items = "" | split: "" %}
-
-{% for folder in folder_map %}
-  {% unless folder == "css" or folder == "index.md" or folder == "Axiom.md" %}
-    {% assign cleaned_folders = cleaned_folders | push: folder %}
-  {% endunless %}
-{% endfor %}
-
-{% for folder in cleaned_folders %}
-  {% assign items = "" | split: "" %}
-  {% for p in pages %}
-    {% assign parts = p.path | split: '/' %}
-    {% if parts[1] == folder %}
-      {% assign items = items | push: p %}
-    {% endif %}
-  {% endfor %}
-  {% assign cleaned_items = cleaned_items | push: items %}
-{% endfor %}
-
-{% assign zipped = "" | split: "" %}
-{% for i in (0..cleaned_folders.size) %}
-  {% assign zipped = zipped | push: cleaned_folders[i] | push: cleaned_items[i] %}
-{% endfor %}
-
-{% assign rf_items = "" %}
-{% for i in (0..cleaned_folders.size) %}
-  {% if cleaned_folders[i] == "Reasoning_Fundamental" or cleaned_folders[i] == "reasoning_fundamental" %}
-    {% assign rf_items = cleaned_items[i] %}
+{% assign rf_items = "" | split: "" %}
+{% for p in pages %}
+  {% assign folder = p.path | split: '/' | slice: 1,1 | first %}
+  {% if folder == "Reasoning_Fundamental" or folder == "reasoning_fundamental" %}
+    {% assign rf_items = rf_items | push: p %}
   {% endif %}
 {% endfor %}
 
-{% if rf_items != "" %}
+{% if rf_items.size > 0 %}
 ## Reasoning Fundamental
 <details open>
   <summary>open</summary>
@@ -153,11 +122,18 @@ Here is a list of hypotheses, in random order.
 </details>
 {% endif %}
 
-{% for i in (0..cleaned_folders.size) %}
-  {% assign folder = cleaned_folders[i] %}
-  {% assign items = cleaned_items[i] %}
+※ 残りのフォルダをアルファベット順に表示します。
 
+{% for folder in folders %}
   {% unless folder == "Reasoning_Fundamental" or folder == "reasoning_fundamental" %}
+    {% assign items = "" | split: "" %}
+    {% for p in pages %}
+      {% assign f = p.path | split: '/' | slice: 1,1 | first %}
+      {% if f == folder %}
+        {% assign items = items | push: p %}
+      {% endif %}
+    {% endfor %}
+
 ## {{ folder | capitalize }}
 <details>
   <summary>open</summary>
@@ -167,6 +143,7 @@ Here is a list of hypotheses, in random order.
     {% endfor %}
   </ul>
 </details>
+
   {% endunless %}
 {% endfor %}
 
