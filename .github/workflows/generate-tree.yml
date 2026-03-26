@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        with:
+          fetch-depth: 0   # ← rebase のために必須
 
       - name: Set up Node
         uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b
@@ -30,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add docs/_data/tree.yml
+          git add _data/tree.yml
           git commit -m "Auto-generate tree.yml" || echo "No changes"
           git pull --rebase origin main
           git push
