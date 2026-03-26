@@ -1,35 +1,35 @@
-const fs = require("fs");
-const path = require("path");
-const yaml = require("js-yaml");
+name: Generate tree.yml
 
-const ROOT = "docs/hypotheses";
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
-function walk(dir) {
-  const result = {};
+permissions:
+  contents: write
 
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
+jobs:
+  build-tree:
+    runs-on: ubuntu-latest
 
-    if (entry.isDirectory()) {
-      result[entry.name] = walk(full);
-    } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      const url = "/" + full.replace("docs/", "").replace(".md", ".html");
-      const title = entry.name.replace(".md", "").replace(/_/g, " ");
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 
-      if (!result._files) result._files = [];
-      result._files.push({ title, url });
-    }
-  }
+      - name: Set up Node
+        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.0
+        with:
+          node-version: 18
 
-  return result;
-}
+      - name: Install dependencies
+        run: npm install js-yaml
 
-const tree = walk(ROOT);
+      - name: Generate tree.yml
+        run: node .github/scripts/generate-tree.js
 
-// YAML に変換
-const yamlText = yaml.dump(tree, { lineWidth: -1 });
-
-// 保存
-fs.writeFileSync("_data/tree.yml", yamlText);
-
-console.log("Generated _data/tree.yml");
+      - name: Commit and push tree.yml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add _data/tree.yml
+          git commit -m "Auto-generate tree.yml" || echo "No changes"
+          git push
