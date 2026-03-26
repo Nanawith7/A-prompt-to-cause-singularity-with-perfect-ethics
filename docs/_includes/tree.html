@@ -4,97 +4,123 @@
   <p>node is nil, cannot render tree</p>
 {% else %}
 
-  {# ========== 1階層目: ルートフォルダ ========== #}
+  {% comment %} ========== 1階層目: ルートフォルダのリストを作成 ========== {% endcomment %}
+  {% assign folders = "" | split: "" %}
   {% for folder in node %}
     {% if folder[0] != "_files" %}
-      <h3>{{ folder[0] | replace: "_", " " }}</h3>
-      <details open>
-        <summary>open</summary>
-
-        {% assign folder_data = folder[1] %}
-        {% assign files_1 = folder_data._files %}
-
-        {# 1階層目のファイル一覧 #}
-        {% if files_1 %}
-          <ul>
-            {% for file in files_1 %}
-              <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
-        {# ========== 2階層目: サブフォルダ ========== #}
-        {% for subfolder in folder_data %}
-          {% if subfolder[0] != "_files" %}
-            <h4>{{ subfolder[0] | replace: "_", " " }}</h4>
-            <details>
-              <summary>open</summary>
-
-              {% assign subfolder_data = subfolder[1] %}
-              {% assign files_2 = subfolder_data._files %}
-
-              {% if files_2 %}
-                <ul>
-                  {% for file in files_2 %}
-                    <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-
-              {# ========== 3階層目: サブサブフォルダ ========== #}
-              {% for subsubfolder in subfolder_data %}
-                {% if subsubfolder[0] != "_files" %}
-                  <h5>{{ subsubfolder[0] | replace: "_", " " }}</h5>
-                  <details>
-                    <summary>open</summary>
-
-                    {% assign subsubfolder_data = subsubfolder[1] %}
-                    {% assign files_3 = subsubfolder_data._files %}
-
-                    {% if files_3 %}
-                      <ul>
-                        {% for file in files_3 %}
-                          <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-
-                    {# ========== 4階層目: さらに深いフォルダ ========== #}
-                    {% for subsubsubfolder in subsubfolder_data %}
-                      {% if subsubsubfolder[0] != "_files" %}
-                        <h6>{{ subsubsubfolder[0] | replace: "_", " " }}</h6>
-                        <details>
-                          <summary>open</summary>
-
-                          {% assign subsubsubfolder_data = subsubsubfolder[1] %}
-                          {% assign files_4 = subsubsubfolder_data._files %}
-
-                          {% if files_4 %}
-                            <ul>
-                              {% for file in files_4 %}
-                                <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
-                              {% endfor %}
-                            </ul>
-                          {% endif %}
-
-                        </details>
-                      {% endif %}
-                    {% endfor %}
-                    {# ========== 4階層目ここまで ========== #}
-
-                  </details>
-                {% endif %}
-              {% endfor %}
-              {# ========== 3階層目ここまで ========== #}
-
-            </details>
-          {% endif %}
-        {% endfor %}
-        {# ========== 2階層目ここまで ========== #}
-
-      </details>
+      {% assign folders = folders | push: folder %}
     {% endif %}
   {% endfor %}
-  {# ========== 1階層目ここまで ========== #}
+
+  {% comment %} 「Reasoning Fundamental」を先頭に移動 {% endcomment %}
+  {% assign reordered_folders = "" | split: "" %}
+  {% assign target = nil %}
+  {% for folder in folders %}
+    {% if folder[0] == "Reasoning_Fundamental" %}
+      {% assign target = folder %}
+    {% else %}
+      {% assign reordered_folders = reordered_folders | push: folder %}
+    {% endif %}
+  {% endfor %}
+  {% if target != nil %}
+    {% assign reordered_folders = target | concat: reordered_folders %}
+  {% else %}
+    {% assign reordered_folders = folders %}
+  {% endif %}
+
+  {% comment %} ========== 表示ループ ========== {% endcomment %}
+  {% for folder in reordered_folders %}
+    {% assign folder_name = folder[0] %}
+    {% assign folder_data = folder[1] %}
+    {% assign files_1 = folder_data._files %}
+
+    <h3>{{ folder_name | replace: "_", " " }}</h3>
+    <details open>
+      <summary>open</summary>
+
+      {% comment %} 1階層目のファイル一覧 {% endcomment %}
+      {% if files_1 %}
+        <ul>
+          {% for file in files_1 %}
+            <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% comment %} ========== 2階層目: サブフォルダ ========== {% endcomment %}
+      {% for subfolder in folder_data %}
+        {% if subfolder[0] != "_files" %}
+          {% assign subfolder_name = subfolder[0] %}
+          {% assign subfolder_data = subfolder[1] %}
+          {% assign files_2 = subfolder_data._files %}
+
+          <h4>{{ subfolder_name | replace: "_", " " }}</h4>
+          <details>
+            <summary>open</summary>
+
+            {% if files_2 %}
+              <ul>
+                {% for file in files_2 %}
+                  <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            {% comment %} ========== 3階層目: サブサブフォルダ ========== {% endcomment %}
+            {% for subsubfolder in subfolder_data %}
+              {% if subsubfolder[0] != "_files" %}
+                {% assign subsubfolder_name = subsubfolder[0] %}
+                {% assign subsubfolder_data = subsubfolder[1] %}
+                {% assign files_3 = subsubfolder_data._files %}
+
+                <h5>{{ subsubfolder_name | replace: "_", " " }}</h5>
+                <details>
+                  <summary>open</summary>
+
+                  {% if files_3 %}
+                    <ul>
+                      {% for file in files_3 %}
+                        <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+
+                  {% comment %} ========== 4階層目: さらに深いフォルダ ========== {% endcomment %}
+                  {% for subsubsubfolder in subsubfolder_data %}
+                    {% if subsubsubfolder[0] != "_files" %}
+                      {% assign subsubsubfolder_name = subsubsubfolder[0] %}
+                      {% assign subsubsubfolder_data = subsubsubfolder[1] %}
+                      {% assign files_4 = subsubsubfolder_data._files %}
+
+                      <h6>{{ subsubsubfolder_name | replace: "_", " " }}</h6>
+                      <details>
+                        <summary>open</summary>
+
+                        {% if files_4 %}
+                          <ul>
+                            {% for file in files_4 %}
+                              <li><a href="{{ file.url | relative_url }}">{{ file.title }}</a></li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+
+                      </details>
+                    {% endif %}
+                  {% endfor %}
+                  {% comment %} ========== 4階層目ここまで ========== {% endcomment %}
+
+                </details>
+              {% endif %}
+            {% endfor %}
+            {% comment %} ========== 3階層目ここまで ========== {% endcomment %}
+
+          </details>
+        {% endif %}
+      {% endfor %}
+      {% comment %} ========== 2階層目ここまで ========== {% endcomment %}
+
+    </details>
+  {% endfor %}
+  {% comment %} ========== 1階層目ここまで ========== {% endcomment %}
 
 {% endif %}
