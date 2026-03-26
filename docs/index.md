@@ -84,12 +84,15 @@ Here is a list of hypotheses, in random order.
     <summary>{{ folder.name | capitalize }}</summary>
     <ul>
       {% for p in folder.items %}
-        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        <li>
+          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        </li>
       {% endfor %}
     </ul>
   </details>
   {% endunless %}
 {% endfor %}
+
 
 
 
