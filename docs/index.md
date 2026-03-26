@@ -1,4 +1,12 @@
 <pre>{{ site.data | inspect }}</pre>
+
+{% include test.html %}
+
+{% if node %}
+  <pre>{{ node | inspect }}</pre>
+{% else %}
+  <p>node is nil</p>
+{% endif %}
 ---
 title: "Axiomatic Reasoning for LLMs"
 description: "A structured index of the Negentropic Maximization Axiom and its derived hypotheses."
