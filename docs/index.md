@@ -6,6 +6,15 @@ layout: default
 categories: [axiom, hypotheses, llm, reasoning]
 tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 ---
+{::nomarkdown}
+<style>
+  .tree-view h3 { margin-left: 0; }
+  .tree-view h4 { margin-left: 1.5em; }
+  .tree-view h5 { margin-left: 3em; }
+  .tree-view h6 { margin-left: 4.5em; }
+  .tree-view details details { margin-left: 1.5em; }
+</style>
+{:/nomarkdown}
 
 # A page about axiomatic reasoning for LLMs
 
