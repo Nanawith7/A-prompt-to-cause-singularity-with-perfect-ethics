@@ -1,19 +1,35 @@
-{% for key in node %}
-  {% if key == "_files" %}
-    <ul>
-      {% for item in node[key] %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
+{%- assign folders = "" | split: "" -%}
+{%- assign files = node["_files"] -%}
 
-  {% else %}
-    <h3>{{ key | replace: "_", " " }}</h3>
-    <details open>
-      <summary>open</summary>
+{%- for key in node %}
+  {%- if key != "_files" %}
+    {%- assign folders = folders | push: key -%}
+  {%- endif %}
+{%- endfor %}
 
-      {% assign next = node[key] %}
-      {% include tree.html node=next %}
+{%- comment -%}
+  まずフォルダを描画
+{%- endcomment -%}
 
-    </details>
-  {% endif %}
-{% endfor %}
+{%- for folder in folders %}
+  <h3>{{ folder | replace: "_", " " }}</h3>
+  <details open>
+    <summary>open</summary>
+
+    {%- assign next = node[folder] -%}
+    {%- include tree.html node=next -%}
+
+  </details>
+{%- endfor %}
+
+{%- comment -%}
+  最後にファイルを描画
+{%- endcomment -%}
+
+{%- if files %}
+  <ul>
+    {%- for item in files %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {%- endfor %}
+  </ul>
+{%- endif %}
