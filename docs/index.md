@@ -83,23 +83,21 @@ Here is a list of hypotheses, in random order.
   {% endif %}
 {% endfor %}
 
-{% assign grouped = "" | split: "" %}
+{% assign folders = "" | split: "" %}
+{% assign folder_map = "" | split: "" %}
+
 {% for p in pages %}
   {% assign parts = p.path | split: '/' %}
   {% assign folder = parts[1] %}
-  {% assign exists = false %}
-  {% for g in grouped %}
-    {% if g.name == folder %}
-      {% assign exists = true %}
-    {% endif %}
-  {% endfor %}
-  {% if exists == false %}
-    {% assign grouped = grouped | push: folder %}
-  {% endif %}
+
+  {% unless folders contains folder %}
+    {% assign folders = folders | push: folder %}
+  {% endunless %}
 {% endfor %}
 
 {% assign folder_objects = "" | split: "" %}
-{% for folder in grouped %}
+
+{% for folder in folders %}
   {% assign items = "" | split: "" %}
   {% for p in pages %}
     {% assign parts = p.path | split: '/' %}
@@ -107,65 +105,68 @@ Here is a list of hypotheses, in random order.
       {% assign items = items | push: p %}
     {% endif %}
   {% endfor %}
-  {% assign folder_objects = folder_objects | push: 
-    (folder | append: ':::' | append: items | join: '|||') 
-  %}
+  {% assign folder_objects = folder_objects | push: items %}
+  {% assign folder_map = folder_map | push: folder %}
 {% endfor %}
 
-{% assign cleaned = "" | split: "" %}
-{% for f in folder_objects %}
-  {% assign name = f | split: ':::' | first %}
-  {% unless name == "css" or name == "index.md" or name == "Axiom.md" %}
-    {% assign cleaned = cleaned | push: f %}
+{% assign cleaned_folders = "" | split: "" %}
+{% assign cleaned_items = "" | split: "" %}
+
+{% for folder in folder_map %}
+  {% unless folder == "css" or folder == "index.md" or folder == "Axiom.md" %}
+    {% assign cleaned_folders = cleaned_folders | push: folder %}
   {% endunless %}
 {% endfor %}
 
-{% assign sorted = cleaned | sort %}
+{% for folder in cleaned_folders %}
+  {% assign items = "" | split: "" %}
+  {% for p in pages %}
+    {% assign parts = p.path | split: '/' %}
+    {% if parts[1] == folder %}
+      {% assign items = items | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% assign cleaned_items = cleaned_items | push: items %}
+{% endfor %}
 
-{% assign rf = "" %}
-{% for f in sorted %}
-  {% assign name = f | split: ':::' | first %}
-  {% if name == "Reasoning_Fundamental" or name == "reasoning_fundamental" %}
-    {% assign rf = f %}
+{% assign zipped = "" | split: "" %}
+{% for i in (0..cleaned_folders.size) %}
+  {% assign zipped = zipped | push: cleaned_folders[i] | push: cleaned_items[i] %}
+{% endfor %}
+
+{% assign rf_items = "" %}
+{% for i in (0..cleaned_folders.size) %}
+  {% if cleaned_folders[i] == "Reasoning_Fundamental" or cleaned_folders[i] == "reasoning_fundamental" %}
+    {% assign rf_items = cleaned_items[i] %}
   {% endif %}
 {% endfor %}
 
-{% if rf != "" %}
-{% assign name = rf | split: ':::' | first %}
-{% assign items_raw = rf | split: ':::' | last %}
-{% assign items = items_raw | split: '|||' %}
-
+{% if rf_items != "" %}
 ## Reasoning Fundamental
 <details open>
   <summary>open</summary>
   <ul>
-    {% for p in items %}
-      {% assign url = p | split: ' ' | last %}
-      <li><a href="{{ url | relative_url }}">{{ p.title }}</a></li>
+    {% for p in rf_items %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </details>
 {% endif %}
 
-{% for f in sorted %}
-  {% assign name = f | split: ':::' | first %}
-  {% unless name == "Reasoning_Fundamental" or name == "reasoning_fundamental" %}
-    {% assign items_raw = f | split: ':::' | last %}
-    {% assign items = items_raw | split: '|||' %}
+{% for i in (0..cleaned_folders.size) %}
+  {% assign folder = cleaned_folders[i] %}
+  {% assign items = cleaned_items[i] %}
 
-## {{ name | capitalize }}
+  {% unless folder == "Reasoning_Fundamental" or folder == "reasoning_fundamental" %}
+## {{ folder | capitalize }}
 <details>
   <summary>open</summary>
   <ul>
     {% for p in items %}
-      {% assign url = p | split: ' ' | last %}
-      <li><a href="{{ url | relative_url }}">{{ p.title }}</a></li>
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </details>
-
   {% endunless %}
 {% endfor %}
-
-
 
