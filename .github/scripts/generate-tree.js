@@ -13,7 +13,7 @@ function walk(dir) {
     if (entry.isDirectory()) {
       result[entry.name] = walk(full);
     } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      const url = "/" + full.replace("docs/", "").replace(".md", ".html");
+      const url = full.replace("docs/", "").replace(".md", ".html");
       const title = entry.name.replace(".md", "").replace(/_/g, " ");
 
       if (!result._files) result._files = [];
