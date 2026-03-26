@@ -74,18 +74,46 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-{% assign pages = site.pages | where_exp: "p", "p.path != '/index.md'" %}
-{% assign grouped = pages | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first" %}
-{% assign sorted = grouped | sort: "name" %}
-
 {%- comment -%}
-  1. Reasoning_Fundamental を最上部に表示
+  0. ページ一覧から不要なものを除外
 {%- endcomment -%}
 
-{% assign rf = sorted | where: "name", "Reasoning_Fundamental" | first %}
+{% assign pages = site.pages
+  | where_exp: "p", "p.path contains '.md'"
+  | where_exp: "p", "p.path != '/index.md'"
+  | where_exp: "p", "p.path != '/axiom.md'"
+  | where_exp: "p", "p.path | split: '/' | size > 2"
+%}
+
+{%- comment -%}
+  1. フォルダ名でグループ化
+{%- endcomment -%}
+
+{% assign grouped = pages
+  | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first"
+%}
+
+{%- comment -%}
+  2. 不要フォルダ名を除外
+{%- endcomment -%}
+
+{% assign cleaned = grouped
+  | reject: "name", "css"
+  | reject: "name", "index.md"
+  | reject: "name", "axiom.md"
+%}
+
+{% assign sorted = cleaned | sort: "name" %}
+
+{%- comment -%}
+  3. Reasoning_Fundamental を最上部に表示
+{%- endcomment -%}
+
+{% assign rf = sorted | where_exp: "f", "f.name | downcase == 'reasoning_fundamental'" | first %}
 {% if rf %}
+## Reasoning Fundamental
 <details open>
-  <summary>Reasoning Fundamental</summary>
+  <summary>open</summary>
   <ul>
     {% for p in rf.items %}
       <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
@@ -95,19 +123,20 @@ Here is a list of hypotheses, in random order.
 {% endif %}
 
 {%- comment -%}
-  2. その他のフォルダを A→Z で表示
+  4. その他のフォルダを A→Z で表示
 {%- endcomment -%}
 
 {% for folder in sorted %}
-  {% unless folder.name == "" or folder.name == "Reasoning_Fundamental" %}
-  <details>
-    <summary>{{ folder.name | capitalize }}</summary>
-    <ul>
-      {% for p in folder.items %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </details>
+  {% unless folder.name | downcase == "reasoning_fundamental" %}
+## {{ folder.name | capitalize }}
+<details>
+  <summary>open</summary>
+  <ul>
+    {% for p in folder.items %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
   {% endunless %}
 {% endfor %}
 
