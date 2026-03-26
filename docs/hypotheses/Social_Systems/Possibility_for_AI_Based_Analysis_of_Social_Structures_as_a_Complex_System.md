@@ -5,9 +5,6 @@ author: "Nanawith7"
 layout: default
 categories: ["complex-systems", "computational-social-science", "ai-analysis"]
 tags: ["cliodynamics", "CAS", "structural-demographic-theory", "social-simulation", "cultural-evolution", "information-processing"]
-last_updated: 2026-03-26
-sitemap:
-    priority: "0.8"
 ---
 
 # AI-Based Analysis of Social Structures as a Complex System
