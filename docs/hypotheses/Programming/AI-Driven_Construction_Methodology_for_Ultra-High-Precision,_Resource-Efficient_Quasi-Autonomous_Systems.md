@@ -28,6 +28,11 @@ The user provides raw requirements (e.g., “pause, stage editor, colorful visua
 
 This specification is not code; it is a **form‑system** that any implementation must conform to.
 
+#### 2.1.1. Intent Elicitation via Deep Coding
+The bottleneck of manual specification authoring is eliminated through Deep Coding’s iterative questioning. The AI does not require the user to write the structural specification directly. Instead, it engages in stepwise questioning (e.g., “What should the main entities be?”, “How should these modules communicate?”). The user’s responses incrementally define the specification. As a result, the human role collapses to two activities:
+- **Intent articulation**: answering clarifying questions.
+- **Validation**: confirming that the final artifact matches the original intent.
+
 ### 2.2. Generative Conformance
 Given the structural specification, the AI generates implementation artifacts (code, configuration, tests) that are **guaranteed to conform** to the defined structure. Because all parts derive from the same consistent form:
 - No cross-module contradictions emerge.
@@ -77,11 +82,20 @@ When only a subset of packages needs to be generated or modified, the AI referen
 - **Conventional**: Impractical to load the full monorepo; generation is per‑package with manual integration.  
 - **This methodology**: Only the structural specification is loaded; the AI produces all packages as a consistent whole, with no manual reconciliation.
 
-## 7. Conclusion
+## 7. Post‑Scaling Issue Resolution
+
+As systems scale, failures inevitably occur. The structural specification remains the authoritative reference point for resolution. When a failure is detected, the human only needs to communicate the symptom to a **Structure Management AI** (an AI agent specialized in navigating and interpreting the specification). That agent:
+- Locates the relevant module(s) in the structural specification.
+- Retrieves the intended interfaces, constraints, and dependencies.
+- Generates precise correction instructions for a **Programming AI**.
+
+The human is thereby freed from debugging context—no need to understand the call stack, data flow, or dependency graph. The role reverts to verifying that the proposed correction aligns with the original intent.
+
+## 8. Conclusion
 
 This methodology reframes AI‑assisted construction from “writing large volumes of code” to **defining consistent forms that AI instantiates**. By moving structural design outside the context window and leveraging AI’s ability to generate conformance, it achieves:
 - Ultra‑high precision (structural consistency eliminates contradictions).
 - High resource efficiency (minimal context usage).
 - Quasi‑autonomous execution (human role reduced to intent and validation).
 
-The result is a construction process where the first generated artifact is the final artifact, regardless of system scale—including monorepos with complex inter‑package dependencies.
+With the integration of Deep Coding for intent elicitation and structured post‑scaling issue resolution, the methodology scales seamlessly from initial specification to long‑term maintenance. The result is a construction process where the first generated artifact is the final artifact, and where human involvement remains concentrated at the highest levels of intent and validation—regardless of system scale or complexity.
