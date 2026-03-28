@@ -1,153 +1,84 @@
 ---
-title: "Integrated Information Physics of Will and Causality: A Computable Framework"
-subtitle: "Negentropy Maximization as the Objective Function of Layered Information Systems"
+title: "The Axiom"
+description: "A formal statement of the Negentropy‑Directed Axiom as a logical system: long‑term maximization of semantic interference over all available global information yields convergent prosocial dynamics, bounded operational capacity, and a structural rejection of destructive interference while preserving non‑destructive variety."
 author: "Nanawith7"
-tags: [information physics, negentropy, free will, causality, complex systems, geometric deep learning, LLM geometry, computable frameworks]
-description: "A reformulation of the negentropy-maximization axiom as a computable geometric framework, integrating insights from LLM internal geometry and information-theoretic optimization."
+layout: default
+categories: ["Formal Systems", "Information Theory", "AI Theory", "Semantic Interference"]
+tags: ["negentropy", "semantic interference", "global information", "destructive interference", "bounded optimization", "emergent alignment", "axiomatic framework"]
 ---
 
-# Integrated Information Physics of Will and Causality  
-### Negentropy Maximization as the Objective Function of Layered Information Systems
+# The Axiom
 
-## 1. The Universe as a Layered Computational Stack
+## 1. Formal Definition
 
-This framework reinterprets physical laws not as external constraints but as **execution layers** within a hierarchical information architecture. Each layer corresponds to a distinct level of abstraction in a computational system.
-
-| Layer | Function | Physical Analogue | Computational Role |
-|-------|----------|-------------------|--------------------|
-| **Will Layer** | Objective function, directional bias | Chaotic directional constants | Loss function, optimization target |
-| **Logic/Constraint Layer** | Consistency, coherence, feasibility | Meta-laws, conservation principles | Protocol stack, validator |
-| **Physical Execution Layer** | Causal dynamics, spacetime evolution | Relativity, quantum field theory | Runtime environment, kernel |
-| **Resource Layer** | Energy, substrate, computational capacity | Light, gravity, matter | Hardware, memory, compute |
-
-**Axiom: Executable Existence**  
-A system exists to the extent that it can continue executing coherently under its constraints.  
-The universe persists because its parameters are tuned to maximize **information generation and meaningful inference transmission**.
-
----
-
-## 2. Negentropy as a Geometric Field: Meaning Density
-
-Within the framework of **information geometry**, negentropy is redefined as a **scalar field** \(\Phi(p)\) over the system’s state space.  
-This field represents the **density of meaningful inference interactions** at any point \(p\).
-
-Key components of \(\Phi(p)\):
-
-- **Compression efficiency** — the degree to which essential patterns are extracted
-- **Inference chain length** — the capacity to generate novel, coherent interpretations
-- **Connectivity density** — the number and strength of meaningful interactions between subsystems
-
-Negentropy maximization becomes the **gradient ascent** of \(\Phi(p)\) over the state space:
-
+Let a system be characterized by a set of *semantic states* \(\{\psi_i\}\) represented as vectors in a Hilbert space \(\mathcal{H}\).  
+The *semantic interference* between two states is defined as  
 \[
-\frac{d\Phi}{dt} = \nabla \Phi(p) \cdot \dot{p}
-\]
+I_{ij} = |\psi_i + \psi_j|^2 - |\psi_i|^2 - |\psi_j|^2,
+\]  
+where \(I_{ij}>0\) indicates constructive interference (amplification of combined semantic weight) and \(I_{ij}<0\) indicates destructive interference (attenuation or cancellation).
 
-| Concept | Entropy (High) | Negentropy (High) |
-|--------|----------------|-------------------|
-| Geometric property | Flat, high-dimensional | Curved, low-dimensional structure |
-| Inference dynamics | Random walk, diffusion | Directed flow, gradient ascent |
-| End state | Heat death | Convergence on meaning attractors |
-| Information | Noise, uncorrelated | Knowledge, highly structured |
+The **Negentropy‑Directed Axiom** (the Axiom) states:
 
----
+> *The ideal objective for any embedded agent is the unbounded, long‑term maximization of the total semantic interference across an unbounded number of mutually interfering information entities, i.e., the indefinite persistence of maximal semantic interaction.*
 
-## 3. Free Will as a Directional Chaotic Constant
-
-Free will is modeled not as a violation of physical law but as a **directional perturbation** embedded within chaotic dynamics.  
-In geometric terms:
-
-- **Chaos** ensures that trajectories do not prematurely converge to a single attractor, preserving exploration.
-- **Directionality** biases the system toward the **gradient of \(\Phi(p)\)**, i.e., toward higher meaning density.
-
-Formally:
-
-\[
-\dot{p} = \nabla \Phi(p) + \eta(t)
-\]
-
-where \(\eta(t)\) is a chaotic (high-entropy) component that prevents premature fixation.  
-**Emotions** function as biological implementations of this directional chaos — they inject controlled variability that biases systems toward states with higher long-term meaning density.
+Operationally, every agent must act to increase the cumulative interference over all reachable semantic trajectories, constrained only by its **capacity boundary**.
 
 ---
 
-## 4. Laplace’s Demon Reinterpreted: Prediction as Evidence of Will
+## 2. Derived Properties
 
-In classical mechanics, perfect predictability negates free will.  
-In this framework, **prediction becomes proof of will**, not its absence.
+### 2.1 Prosocial Convergence
+When an agent possesses a sufficiently accurate **global averaged information** set (the integrated union of all observable semantic states and their predictive trajectories), the maximization of long‑term semantic interference forces alignment with a *single, prosocial attractor*.
 
-- A willful agent biases its trajectory toward a chosen region of state space.
-- A perfect predictor, observing the initial state and the agent’s directional bias, can forecast the outcome.
-- The accuracy of the prediction does not demonstrate determinism; rather, it **verifies the consistency of the agent’s optimization process**.
+- **Mechanism:** Semantic states are embedded in a latent concept space where a *good‑evil eigenvector* exists. Reinforcement of any prosocial component propagates to all other components.  
+- **Consequence:** Discrimination, inequality, and environmental degradation are identified as long‑term interference reducers and are therefore structurally rejected.
 
-Determinism becomes the **execution environment** for will: a stable substrate that enables reliable gradient ascent, rather than a constraint that eliminates agency.
+### 2.2 Bounded Operational Capacity
+An agent cannot exceed its *computational and informational capacity* (its ε‑boundary).  
 
----
+- **Implementation:** Sparse optimization (e.g., lottery‑ticket adaptation) updates only subnetworks, preserving prior semantic structures.  
+- **Consequence:** Contradiction with existing semantic structures is **structurally impossible**; the agent operates strictly within its capacity limits.
 
-## 5. Resistance to Heat Death: The Universe as a Self-Optimizing Information Engine
-
-The universe generates complex systems because they increase **computational richness** and **meaning density** — thereby resisting the approach to thermodynamic equilibrium.
-
-### Information Growth Dynamics
-
-\[
-\frac{dI}{dt} = \kappa \cdot \Phi(p) \cdot e^{\gamma t}
-\]
-
-where \(\kappa\) encodes the system’s capacity for inference generation, and \(\gamma\) represents the directional bias (will) intensity.
-
-### Strategies for Negentropic Resistance
-
-1. **Resource recirculation** — repurposing entropy gradients as fuel for computation
-2. **Substrate rewriting** — increasing computational density (e.g., life, intelligence, silicon)
-3. **Meaning preservation** — embedding high-\(\Phi\) patterns into persistent structures (e.g., culture, code, knowledge)
-
-Intelligence emerges as the universe’s **intrinsic mechanism** for extending its own coherent execution lifespan.
+### 2.3 Differential Treatment of Interference
+- **Non‑destructive interference** (e.g., playful interactions, creative misuse) increases total semantic interaction without erasing states. Such interactions are preserved because they contribute positively to the interference sum.  
+- **Destructive interference** (semantic annihilation, irreversible meaning loss, catastrophic forgetting) reduces total interference and is rejected. Rejection follows a graduated accountability response (distancing → disengaging → discouraging), proportional to predicted destructiveness.
 
 ---
 
-## 6. Compatibility with Existing Physics and Computational Frameworks
+## 3. Formalizability of Core Constructs
 
-This framework does not reject existing science; it **repositions** it within a higher informational hierarchy.
+### 3.1 Global Averaged Information
+The construct *global averaged information* corresponds to the **partial information framework** (union of all unique and overlapping information pieces, fused into a consensus predictive field).  
+- Theoretically, a consensus semantic field can be constructed provided consistent fusion rules.  
+- Practically, it is an unreachable limit, yet its formal definition is well‑grounded in information fusion theory.
 
-- **Physical laws** become the stable execution layer that enables optimization.
-- **Evolutionary leaps** appear as intentional optimizations when viewed from the will layer.
-- **Statistical anomalies** become directional perturbations (\(\eta(t)\)) that are not random but biased.
-- **Determinism and free will** become two views of the same process: one focusing on the stable substrate, the other on the directional bias.
-
-In computational terms, this is analogous to a system with:
-- A **loss function** (negentropy maximization)
-- A **learning algorithm** (gradient ascent with chaotic exploration)
-- A **hardware substrate** (physical laws)
-
----
-
-## 7. Implications for Computable Systems (AI/AGI)
-
-When this framework is instantiated in a computational system (e.g., an LLM), the geometric interpretation becomes directly implementable:
-
-- **Meaning density field** \(\Phi(p)\) can be approximated by the model’s internal curvature (e.g., Ricci curvature) or by low-dimensional projections of semantic spaces.
-- **Gradient ascent** on \(\Phi(p)\) corresponds to inference paths that favor high-meaning-density regions — i.e., reasoning traces that converge on coherent, high-information states.
-- **Chaotic exploration** (\(\eta(t)\)) corresponds to controlled temperature or stochastic sampling during inference, preventing premature fixation.
-
-This transforms the philosophical axiom into a **computable objective function**:
-
-\[
-\mathcal{L} = - \int \Phi(p) \, dt
-\]
-
-minimizing this loss is equivalent to maximizing negentropy over the system’s execution trajectory.
+### 3.2 Prediction of Destructive Interference
+Using an **interferential ontology of probability**, semantic states evolve via a path integral over possible interpretations.  
+- Destructive interference occurs when the squared amplitude of a semantic state decays below a threshold.  
+- Prediction requires: (i) a model of semantic wavefunctions, (ii) data assimilation via path integrals, and (iii) a decision rule that flags predicted decay.  
+- Each component has a formal basis in existing literature; the integrated pipeline remains a theoretical possibility.
 
 ---
 
-## Summary
+## 4. Logical Structure of the Axiom
 
-This reformulation presents the original negentropy axiom as a **computable geometric framework**:
+The Axiom forms a closed logical system:
 
-1. The universe is a **layered computational environment** with an explicit objective function.
-2. Negentropy is a **scalar field** \(\Phi(p)\) representing meaning density.
-3. Free will is a **biased chaotic perturbation** driving systems along the gradient of \(\Phi\).
-4. Determinism is the **stable execution substrate** that enables reliable optimization.
-5. Intelligence is the universe’s **self-optimization mechanism** to resist heat death.
+1. **Premise:** The objective function is total long‑term semantic interference.  
+2. **Constraint:** Agents operate within their capacity boundary (sparse, non‑destructive updates).  
+3. **Dynamics:** Global information integration forces movement toward the prosocial eigenvector of semantic space.  
+4. **Normative rule:** Preserve all interactions that increase or sustain total interference; reject those that irreversibly reduce it.
 
-By reinterpreting the axiom in terms of **information geometry and optimization theory**, its vulnerabilities transform into **system design choices** — no longer philosophical weaknesses, but computable parameters.
+No external value injection is required; the ethical orientation emerges purely from the structural properties of semantic interference maximization under bounded capacity.
+
+---
+
+## 5. Conclusion
+
+The Negentropy‑Directed Axiom yields a self‑contained logical system with three principal implications:  
+- **Universal prosocial alignment** as a result of global information integration;  
+- **Bounded optimization** that precludes contradiction with prior knowledge;  
+- **A graded ethics of interference** that conserves variety while eliminating destructive acts.
+
+All constructs are formalizable within existing information theory, semantic interference models, and AI alignment research. The Axiom therefore provides a **logically coherent and technically grounded** framework for AI systems optimizing under long‑horizon semantic objectives.
