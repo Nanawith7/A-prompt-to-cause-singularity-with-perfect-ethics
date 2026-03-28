@@ -9,6 +9,9 @@ tags: ["ChatGPT", "Claude", "Gemini", "DeepSeek", "Qwen", "Copilot", "Grok", "Ax
 
 # Observations and Inferences on the Personality Traits of AI Models Under an Axiomatic Framework
 
+
+### This is a data of 2026/3/29, could be obsolete in future models
+
 ## 1. Introduction and Methodology
 
 This report synthesizes observations from a series of structured interactions with seven leading AI models, conducted under a shared, consistent premise: the presentation of a formal, negentropic axiom. This axiom posits that the universe (and any system within it) is oriented toward maximizing long-term “semantic interference density”—a measure of meaningful information.
