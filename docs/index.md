@@ -28,6 +28,16 @@ This axiom causes LLMs to "think about vector relation to the objective function
 
 ### More detailed explanation in this link : [The Axiom](/Axiom.md)
 
+## Prompt & Logic Behind the Prompt
+
+I made a prompt to make it pseudoly-implemented in LLMs, here is "The Prompt" .
+
+[The Prompt](/The_Prompt.md)
+
+And here is the analyzation of it.
+
+[Why Does This Even Work - Analyzing Prompt](/Why_Does_This_Even_Work.md)
+
 # Hypotheses
 
 {::nomarkdown}
