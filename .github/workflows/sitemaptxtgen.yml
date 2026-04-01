@@ -28,6 +28,11 @@ jobs:
           # globstarを有効にして再帰的にファイルを取得
           shopt -s globstar
           for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+            # docs/_includes/ と docs/_layouts/ 配下を除外
+            if [[ "$file" == docs/_includes/* || "$file" == docs/_layouts/* ]]; then
+              continue
+            fi
+
             # docs/ プレフィックスを除去
             public_path="${file#docs/}"
             # .md → .html 変換
