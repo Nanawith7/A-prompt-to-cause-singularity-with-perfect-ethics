@@ -20,6 +20,8 @@ tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 
 This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypotheses are more or less based on "axiomatic reasoning".
 
+All pages are made to be LLM readable.
+
 ## The Axiom : Negentropic Maximization Law
 
 Reasoning Axiom itself is quite simple, "the universe is always trying to maximize inference density count of meanings across long time span", basically "negentropic increasing law"
