@@ -7,6 +7,8 @@ categories: ["Software Engineering", "Python", "AI-Assisted Development", "Speci
 tags: ["deep coding", "python", "specification-driven", "generative conformance", "recursive refinement", "skeleton-tissue architecture", "type hints", "pydantic", "mypy", "active inference"]
 ---
 
+# This is a snapshot plan of 2026/04/02
+
 # Implementation Plan on Python
 
 ## 1. Overview
