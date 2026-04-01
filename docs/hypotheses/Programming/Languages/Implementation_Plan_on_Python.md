@@ -34,7 +34,7 @@ The specification is expressed using Python’s static and runtime type systems:
 - **Module Boundaries**: Define public interfaces in `__init__.py` files with explicit `__all__` lists. All cross-module dependencies must reference only these public interfaces.
 - **Invariants**: Encode business invariants in pydantic validators (`@field_validator`, `@model_validator`) or as abstract methods in protocol definitions.
 
-Example specification fragment (plain text):
+Example specification fragment :
 ```
 from typing import Protocol
 from pydantic import BaseModel
