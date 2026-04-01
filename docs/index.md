@@ -46,5 +46,5 @@ And here is the analyzation of it.
 
 ---
 
-Those pages are made of PDR methodology.
+Those pages are made with PDR methodology.
 [Discussion](https://github.com/Nanawith7/A-prompt-to-cause-pseudo-singularity-with-ethics/discussions)
