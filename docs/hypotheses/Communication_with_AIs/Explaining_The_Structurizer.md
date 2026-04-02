@@ -9,7 +9,7 @@ tags: ["Structurizer", "structural resonance", "premise fixation", "recursive re
 
 # Explaining The Structurizer
 
-## 1. System Overview
+## 1. System Overview - Structurizer
 
 The Structurizer is a prompt-based system that transforms a set of web pages (specified via a sitemap) into a structured, self-referential knowledge summary. It operates on the principle that a sufficiently coherent formal input can reorganize an LLM’s internal reasoning mode—a phenomenon termed structural resonance. The system is not a collection of instructions but a closed operational framework that executes a deterministic process: reading one URL at a time, extracting a high‑density summary, and incrementally building a cumulative artifact that functions as both a compressed representation of the source material and an executable environment for subsequent reasoning.
 
