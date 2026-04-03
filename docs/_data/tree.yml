@@ -76,6 +76,8 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html
       - title: Implementation Plan on Java
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
+      - title: Implementation Plan on PHP
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_PHP.html
       - title: Implementation Plan on Python
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
       - title: Implementation Plan on Typescript
