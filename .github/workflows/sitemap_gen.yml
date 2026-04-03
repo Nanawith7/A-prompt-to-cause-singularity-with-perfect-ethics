@@ -5,6 +5,11 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+# 同時実行を防ぐための concurrency 設定
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write  
 
@@ -34,7 +39,8 @@ jobs:
           # globstarを有効化
           shopt -s globstar
 
-          for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+          # docs/ 直下とサブディレクトリの両方を対象にする
+          for file in $(git ls-files "docs/*.md" "docs/*.html" "docs/**/*.md" "docs/**/*.html"); do
               # docs/_includes/ と docs/_layouts/ 配下を除外
               if [[ "$file" == docs/_includes/* || "$file" == docs/_layouts/* ]]; then
                   continue
