@@ -5,6 +5,11 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+# 同時実行を防ぐ concurrency 設定
+concurrency:
+  group: sitemap-generator   # XML生成ワークフローと同じグループ名にすると両方同時に走らない
+  cancel-in-progress: true
+
 permissions:
   contents: write  
 
@@ -25,9 +30,10 @@ jobs:
           # sitemap.txt を新規作成（空ファイル）
           > docs/sitemap.txt
 
-          # globstarを有効にして再帰的にファイルを取得
+          # globstarを有効化
           shopt -s globstar
-          for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+          # docs/ 直下とサブディレクトリの両方を対象にする
+          for file in $(git ls-files "docs/*.md" "docs/*.html" "docs/**/*.md" "docs/**/*.html"); do
             # docs/_includes/ と docs/_layouts/ 配下を除外
             if [[ "$file" == docs/_includes/* || "$file" == docs/_layouts/* ]]; then
               continue
