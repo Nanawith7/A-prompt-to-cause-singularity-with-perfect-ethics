@@ -105,6 +105,8 @@ Reasoning_Fundamental:
   _files:
     - title: Axiomatic Framework for Negentropic Semantic Processing in LLMs
       url: hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html
+    - title: Can The Axiom Contain Current Axioms for LLMs
+      url: hypotheses/Reasoning_Fundamental/Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html
     - title: Ethics implication of axiom for AIs
       url: hypotheses/Reasoning_Fundamental/Ethics_implication_of_axiom_for_AIs.html
     - title: Impact of the Axiom on Speech Recognition
