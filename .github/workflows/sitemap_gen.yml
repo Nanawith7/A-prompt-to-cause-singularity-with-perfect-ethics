@@ -7,7 +7,7 @@ on:
 
 # 同時実行を防ぐための concurrency 設定
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: sitemap-generator
   cancel-in-progress: true
 
 permissions:
