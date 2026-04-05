@@ -33,10 +33,12 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_PHP.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Logic_behind_Deep_Coding.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/The_Potential_of_Deep_Coding.html
