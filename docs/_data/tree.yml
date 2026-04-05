@@ -1,9 +1,9 @@
 AI_Architecture:
   _files:
+    - title: Can Negentropic Learning Solve Groundedness
+      url: hypotheses/AI_Architecture/Can_Negentropic_Learning_Solve_Groundedness.html
     - title: Extracting Minimal Logical Structure
       url: hypotheses/AI_Architecture/Extracting_Minimal_Logical_Structure.html
-    - title: Negentropic Learning Can it solve groundedness
-      url: hypotheses/AI_Architecture/Negentropic_Learning_Can_it_solve_groundedness.html
     - title: The Method of Dynamic Learning
       url: hypotheses/AI_Architecture/The_Method_of_Dynamic_Learning.html
     - title: Theoretical Architecture of an AGI System
