@@ -10,6 +10,8 @@ AI_Architecture:
       url: hypotheses/AI_Architecture/Theoretical_Architecture_of_an_AGI_System.html
 Communication_with_Ais:
   _files:
+    - title: AI Smartness Implicit Reasoning and explicit Reasoning
+      url: hypotheses/Communication_with_Ais/AI_Smartness_Implicit_Reasoning_and_explicit_Reasoning.html
     - title: A Reverse alignment-Prompt over Architecture
       url: hypotheses/Communication_with_Ais/A_Reverse_alignment-Prompt_over_Architecture.html
     - title: A metaphor of semantic universe Describing LLMs in slightly more intuitive style
@@ -28,6 +30,8 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html
     - title: The Mechanism of Misrecognition Due to Excessive Logicality and Its Appropriate Handling
       url: hypotheses/Communication_with_Ais/The_Mechanism_of_Misrecognition_Due_to_Excessive_Logicality_and_Its_Appropriate_Handling.html
+    - title: The Theoretical Reason of Difficulty of understanding LLM
+      url: hypotheses/Communication_with_Ais/The_Theoretical_Reason_of_Difficulty_of_understanding_LLM.html
   Alignment:
     _files:
       - title: A Destroyers Paradox
