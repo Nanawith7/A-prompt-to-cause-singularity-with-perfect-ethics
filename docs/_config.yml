@@ -1,5 +1,7 @@
 plugins: 
   - jekyll-seo-tag   
+mermaid:
+  version: "9.1.3"
 baseurl: "/A-prompt-to-cause-pseudo-singularity-with-ethics"
 theme: jekyll-theme-primer
 source: docs
