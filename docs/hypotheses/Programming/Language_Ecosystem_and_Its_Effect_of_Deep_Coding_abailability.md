@@ -123,17 +123,17 @@ radar-beta
 
 ```mermaid
 flowchart TD
-    Start[Project Start] --> Q1{Systems programming<br>or embedded?}
+    Start[Project Start] --> Q1{"`Systems programming\nor embedded?`"}
     Q1 -->|Yes| Rust
-    Q1 -->|No| Q2{Apple ecosystem<br>(iOS/macOS)?}
+    Q1 -->|No| Q2{"`Apple ecosystem\n(iOS/macOS)?`"}
     Q2 -->|Yes| Swift
-    Q2 -->|No| Q3{Data science / AI/ML<br>primary goal?}
+    Q2 -->|No| Q3{"`Data science / AI/ML\nprimary goal?`"}
     Q3 -->|Yes| Python
-    Q3 -->|No| Q4{Large enterprise<br>(100+ people, long-term)?}
+    Q3 -->|No| Q4{"`Large enterprise\n(100+ people, long-term)?`"}
     Q4 -->|Yes| Java
-    Q4 -->|No| Q5{Microservices<br>or CLI tools?}
+    Q4 -->|No| Q5{"`Microservices\nor CLI tools?`"}
     Q5 -->|Yes| Go
-    Q5 -->|No| Q6{Web API / backend<br>as core?}
+    Q5 -->|No| Q6{"`Web API / backend\nas core?`"}
     Q6 -->|Yes| TypeScript
     Q6 -->|No| Rust
 ```
