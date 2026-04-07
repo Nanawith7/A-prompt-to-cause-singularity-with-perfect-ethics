@@ -82,6 +82,8 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
       - title: Implementation Plan on C plusplus
         url: hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html
+      - title: Implementation Plan on Dart
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Dart.html
       - title: Implementation Plan on Go
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
       - title: Implementation Plan on Java
@@ -102,6 +104,8 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Swift.html
       - title: Implementation Plan on Typescript
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
+      - title: Implementation Plan on VBNET 8 or 9
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_VBNET_8_or_9.html
       - title: Partial Implementation Plan on Bash
         url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
       - title: Partial Implementation Plan on Lua
