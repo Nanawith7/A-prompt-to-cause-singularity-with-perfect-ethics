@@ -7,7 +7,7 @@ categories: ["Prompt Engineering", "Research Workflow", "Pseudo Deep Research"]
 tags: ["PDR", "autonomous page selection", "research plan", "structured summary", "batch output"]
 ---
 
-[]というテーマについて、まずはこの要約から必要なページを判断、タイトルとともに一括出力し一旦出力を停止し、それを受け取ったあとに別の出力としてリサーチプランを提示してくれ
+[]というテーマについて、まずはこの要約からリサーチプランの考案に必要、あるいは重要なページを判断、要約内部のタイトルとともに、最も重要と予測される10個まで番号付き箇条書きリスト形式(タイトルとURLのみ、リストの合間には一行の隙間を空ける)で一括出力し一旦出力を停止してくれ。リサーチプランに関しての処理は今回は行わない
 
 
 
