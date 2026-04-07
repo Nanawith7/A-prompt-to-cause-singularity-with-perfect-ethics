@@ -133,6 +133,8 @@ Prompts:
         url: hypotheses/Prompts/Structurizer/Sitemap_Patcher.html
       - title: Sitemap Patcherv2
         url: hypotheses/Prompts/Structurizer/Sitemap_Patcherv2.html
+      - title: Sitemap Patcherv3
+        url: hypotheses/Prompts/Structurizer/Sitemap_Patcherv3.html
       - title: Sitemap Structurizer
         url: hypotheses/Prompts/Structurizer/Sitemap_Structurizer.html
       - title: Sitemap Structurrizerv2
