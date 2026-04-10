@@ -62,6 +62,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_R.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Logic_behind_Deep_Coding.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Similarity_of_The_Axiom_and_Coding_Best_Practice.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/The_Potential_of_Deep_Coding.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Visual_Diagram_as_an_Optimized_Middle_Layer_for_Deep_Coding.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Deep_Coding/Deep_Coding.html
