@@ -200,6 +200,10 @@ Reasoning_Fundamental:
     - title: The Possible Impact of the Axiom on Scientific Reasoning
       url: hypotheses/Reasoning_Fundamental/The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.html
 Social_Systems:
+  2026-04:
+    _files:
+      - title: Homology Between Marxian Prediction and Dissipative Structure
+        url: hypotheses/Social_Systems/2026-04/Homology_Between_Marxian_Prediction_and_Dissipative_Structure.html
   _files:
     - title: Does AI Enable an Era of Democratized Genius
       url: hypotheses/Social_Systems/Does_AI_Enable_an_Era_of_Democratized_Genius.html
