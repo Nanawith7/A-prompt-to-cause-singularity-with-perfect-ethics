@@ -64,6 +64,8 @@ Communication_with_Ais:
     _files:
       - title: Can Context Be Considered an Internal Structure in LLMs
         url: hypotheses/Communication_with_Ais/Contexts/Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.html
+      - title: Emergent Procedural Error in Claude Sonnet
+        url: hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
       - title: Think Later or Think First
         url: hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 Daily_Lives:
@@ -78,6 +80,10 @@ Hardware:
   _files:
     - title: A Mechanical Brain
       url: hypotheses/Hardware/A_Mechanical_Brain.html
+JP:
+  _files:
+    - title: 日本文化における構造化された曖昧さの機能分析
+      url: hypotheses/JP/日本文化における構造化された曖昧さの機能分析.html
 Misc:
   _files:
     - title: ASI 2028
