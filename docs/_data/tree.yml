@@ -271,4 +271,7 @@ Summary:
   _files:
     - title: Yoyakutext
       url: hypotheses/Summary/Yoyakutext.html
-The_Clock: {}
+The_Clock:
+  _files:
+    - title: The Clock
+      url: hypotheses/The_Clock/The_Clock.html
