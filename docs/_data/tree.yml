@@ -13,6 +13,8 @@ AI_Architecture:
 Applications:
   2026-04:
     _files:
+      - title: Architecture for Historical Knowledge Graph Visualization and Collaborative Research Infrastructure
+        url: hypotheses/Applications/2026-04/Architecture_for_Historical_Knowledge_Graph_Visualization_and_Collaborative_Research_Infrastructure.html
       - title: Idea-Optimized Personalized Auto-Generative Knowledge Base Design
         url: hypotheses/Applications/2026-04/Idea-Optimized_Personalized_Auto-Generative_Knowledge_Base_Design.html
       - title: The Lonely Forum
