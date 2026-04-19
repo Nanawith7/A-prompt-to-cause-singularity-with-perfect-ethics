@@ -45,11 +45,11 @@ Flowcharts, Venn diagrams, and sequence diagrams carry an implicit expectation o
 
 ```mermaid
 flowchart TD
-    📊[📊] -->|➕| 🕸️[🕸️]
-    🕸️ -->|⚡️| 🔄[🔄]
-    🔄 -->|💥| 🤣[🤣]
-    📉[📉] -->|➖| 🤷[🤷]
-    🤷 -->|🕳️| 🚫[🚫]
+    A[📊] -->|➕| B[🕸️]
+    B -->|⚡️| C[🔄]
+    C -->|💥| D[🤣]
+    E[📉] -->|➖| F[🤷]
+    F -->|🕳️| G[🚫]
 ```
 
 ## 3. Cryptographic and Ludic Practices in Digital Culture
@@ -76,13 +76,13 @@ Mermaid.js diagrams possess a dual representational layer: the textual source co
 graph LR
     subgraph Phase1[ ]
         direction LR
-        💻[💻] -->|📝| 📄[📄]
-        📄 -->|🤔| 😮[😮]
+        H[💻] -->|📝| I[📄]
+        I -->|🤔| J[😮]
     end
     subgraph Phase2[ ]
         direction LR
-        📄 -->|🔄| 🖼️[🖼️]
-        🖼️ -->|👀| 😂[😂]
+        K[📄] -->|🔄| L[🖼️]
+        L -->|👀| M[😂]
     end
 ```
 
