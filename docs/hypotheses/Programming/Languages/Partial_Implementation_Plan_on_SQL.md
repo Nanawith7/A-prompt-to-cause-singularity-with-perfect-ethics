@@ -4,7 +4,7 @@ description: "A technical framework for applying specification-driven, recursive
 author: "Nanawith7"
 layout: default
 categories: ["Database Engineering", "SQL", "Specification-Driven Development", "Schema Management"]
-tags: ["SQL", "deep coding", "specification-driven", "generative conformance", "skeleton-tissue", "fixed premise", "recursive refinement", "schema versioning"]
+tags: ["SQL", deep_coding, structural_specification, generative_conformance, skeleton_tissue_architecture, fixed_premise, recursive_refinement, "schema versioning"]
 ---
 
 # Partial Implementation Plan on SQL

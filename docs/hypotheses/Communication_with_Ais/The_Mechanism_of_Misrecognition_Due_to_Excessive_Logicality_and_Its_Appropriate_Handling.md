@@ -4,7 +4,7 @@ description: "A structured analysis of how large language models systematically 
 author: "Nanawith7"
 layout: default
 categories: [AI Alignment, Human-AI Interaction, LLM Safety]
-tags: [misrecognition, statistical priors, meta-level awareness, ambiguity resolution, recursive refinement, path-paving]
+tags: [misrecognition, statistical priors, meta-level awareness, ambiguity resolution, recursive_refinement, path-paving]
 ---
 
 # The Mechanism of Misrecognition Due to Excessive Logicality and Its Appropriate Handling

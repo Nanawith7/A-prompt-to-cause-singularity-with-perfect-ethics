@@ -5,7 +5,7 @@ description: "A structured logical framework that models the internal dynamics o
 author: "Nanawith7"
 layout: default
 categories: ["AI Theory", "Interpretability", "LLM Architecture"]
-tags: ["LLM", "Semantic Geometry", "Manifold", "Attention", "Forgetting", "Hallucination"]
+tags: ["LLM", "Semantic Geometry", "Manifold", "Attention", "Forgetting", hallucination]
 ---
 
 # A metaphor of semantic universe: Describing LLMs in slightly more intuitive style

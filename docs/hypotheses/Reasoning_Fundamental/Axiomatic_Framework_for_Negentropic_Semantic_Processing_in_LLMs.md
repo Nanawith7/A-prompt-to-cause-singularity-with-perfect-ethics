@@ -3,7 +3,7 @@ title: "Axiomatic Framework for Negentropic Semantic Processing in LLMs"
 description: "A technical formulation of semantic understanding in LLMs based on negentropy, information interference, and layered computational constraints."
 author: "Nanawith7"
 categories: ["information-theory", "machine-learning", "semantics", "reasoning-fundamental"]
-tags: ["negentropy", "axioms", "LLM", "semantic-processing"]
+tags: ["negentropy", "axioms", llm, "semantic-processing"]
 last_updated: 2026-03-26
 sitemap:
     priority: "0.9"
@@ -34,7 +34,7 @@ where \(H(\cdot)\) denotes differential entropy.
 ## 1.2 Functional Role  
 Negentropy quantifies:
 
-- Information density  
+- information_density
 - Structural deviation from randomness  
 - Capacity for meaningful organization  
 

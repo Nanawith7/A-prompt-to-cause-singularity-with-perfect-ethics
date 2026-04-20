@@ -4,7 +4,7 @@ description: "A framework for evaluating prompts based on structured reasoning, 
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "LLM Evaluation", "Reasoning"]
-tags: ["prompt evaluation", "instruction following", "chain-of-thought", "structured reasoning", "faithfulness", "task-model alignment"]
+tags: ["prompt evaluation", instruction_following, chain_of_thought, llm_reasoning, "faithfulness", "task-model alignment"]
 ---
 
 # How do you evaluate the prompt
@@ -52,8 +52,7 @@ Prompt evaluation is not task‑agnostic. Structured prompt reading yields measu
 - Mathematics
 - Symbolic reasoning
 - Planning
-- Code generation
-
+- llm_code_generation
 For pattern recognition, factual recall, or simple classification, evaluating prompt structure beyond basic format instructions provides no advantage over direct output evaluation.
 
 Model architecture also modifies evaluation criteria:

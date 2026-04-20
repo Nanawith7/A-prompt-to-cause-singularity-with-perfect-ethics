@@ -4,7 +4,7 @@ description: "A formal framework for extracting a minimal logical core from LLMs
 author: "Nanawith7"
 layout: default
 categories: ["Formal Systems", "Information Theory", "LLM Architecture", "Model Compression"]
-tags: ["negentropy", "logical core extraction", "Fisher information", "structural resonance", "active inference", "sparse subnetwork", "dynamic context interface"]
+tags: ["negentropy", "logical core extraction", information_geometry, structural_resonance, active_inference, "sparse subnetwork", "dynamic context interface"]
 ---
 
 # Extracting Minimal Logical Structure

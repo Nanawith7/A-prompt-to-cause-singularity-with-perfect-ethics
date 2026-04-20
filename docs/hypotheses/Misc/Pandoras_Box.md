@@ -4,7 +4,7 @@ description: "After all the afflictions of logic had escaped, one thing remained
 author: "Nanawith7"
 layout: default
 categories: ["Philosophy", "Logic", "Human Condition"]
-tags: ["Pandora’s Box", "Axiom", "Negentropy", "Hope", "Reason and Emotion"]
+tags: ["Pandora’s Box", axiomatic_reasoning, negentropic_orientation, "Hope", "Reason and Emotion"]
 ---
 
 # Pandora’s Box: The Last Axiom

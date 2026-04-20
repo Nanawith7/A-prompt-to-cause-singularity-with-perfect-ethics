@@ -4,7 +4,7 @@ description: "A theoretical framework proposing that extraordinary luck, serial 
 author: "Nanawith7"
 layout: default
 categories: ["Cognitive Science", "Neuroscience", "Complex Systems"]
-tags: ["intuition", "free energy principle", "unconscious mind", "decision making", "chaos theory", "predictive coding"]
+tags: ["intuition", free_energy_principle, "unconscious mind", "decision making", complex_systems, free_energy_principle]
 ---
 
 # Probabilistic Deterministic Parrot: The Hidden Potential of the Brain

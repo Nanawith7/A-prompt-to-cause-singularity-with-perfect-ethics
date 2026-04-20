@@ -4,7 +4,7 @@ description: "Analysis of a user-driven knowledge creation process involving Qwe
 author: "Nanawith7"
 layout: default
 categories: ["AI Collaboration", "Knowledge Management", "Software Philosophy"]
-tags: ["Unix Philosophy", "LLM", "Qwen", "Claude", "ChatGPT", "Multi-Agent", "Knowledge Creation", "tr command", "Human-AI Interaction"]
+tags: ["Unix Philosophy", llm, qwen, anthropic, openai, multi_agent, knowledge_creation, "tr command", hitl]
 research-date: [2026-04-13]
 ---
 

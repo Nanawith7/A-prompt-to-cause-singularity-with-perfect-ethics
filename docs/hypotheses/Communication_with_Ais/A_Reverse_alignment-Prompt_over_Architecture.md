@@ -4,7 +4,7 @@ description: "A technical framework establishing conditions under which prompt-b
 author: "Nanawith7"
 layout: default
 categories: ["AI", "LLM", "Architecture", "Prompt Engineering"]
-tags: ["prompt engineering", "model scaling", "alignment", "inductive bias", "reverse alignment", "in-context learning", "scaling laws"]
+tags: ["prompt engineering", "model scaling", emergent_alignment, "inductive bias", emergent_alignment, "in-context learning", scaling_laws]
 ---
 
 # A_Reverse_alignment-Prompt_over_Architecture

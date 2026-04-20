@@ -4,7 +4,7 @@ description: "A technical implementation framework for applying Deep Coding meth
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Java", "AI-Assisted Development", "Methodology"]
-tags: ["Deep Coding", "Java", "Generative Conformance", "Structural Specification", "Contract-First", "Architecture"]
+tags: ["Deep Coding", programming_languages, generative_conformance, structural_specification, "Contract-First", "Architecture"]
 ---
 
 # Implementation Plan on Java

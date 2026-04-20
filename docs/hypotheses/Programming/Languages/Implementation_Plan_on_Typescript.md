@@ -4,7 +4,7 @@ description: "A technical implementation plan for applying Deep Coding methodolo
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "TypeScript", "AI-Assisted Development", "Methodology"]
-tags: ["Deep Coding", "TypeScript", "Generative Conformance", "Structural Specification", "Validation Gates", "Skeleton-Tissue Architecture", "Recursive Refinement"]
+tags: ["Deep Coding", programming_languages, generative_conformance, structural_specification, validation_gates, skeleton_tissue_architecture, recursive_refinement]
 ---
 
 # Implementation Plan on TypeScript

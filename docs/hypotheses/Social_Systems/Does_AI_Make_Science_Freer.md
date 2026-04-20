@@ -4,7 +4,7 @@ description: "An analysis of how automated research alters the constraints on sc
 author: "Nanawith7"
 layout: default
 categories: ["AI in Science", "Research Automation", "Science Policy", "Information Theory"]
-tags: ["research automation", "attention economy", "path dependence", "self-driving labs", "research assessment", "AI Scientist", "bottleneck cascade"]
+tags: ["research automation", "attention economy", "path dependence", "self-driving labs", llm_evaluation, "AI Scientist", "bottleneck cascade"]
 research-date: 2026-04-11
 ---
 

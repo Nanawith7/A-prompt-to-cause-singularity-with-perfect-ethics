@@ -140,7 +140,7 @@ tags: ["dialogue-driven", "sequential processing", "structured summary", "autono
     - **要約**: ネゲントロピー最大化の形式的定義。意味干渉の長期最大化を目的関数とする。
     - **総文字数（概算）**: 5,200字
     - **最終更新日**: 2026-03-29
-    - **重要関係性タグ**: #理論的基盤, #公理, #ネゲントロピー, #意味干渉, #形式化
+    - **重要関係性タグ**: #理論的基盤, #公理, #negentropic_orientation, #意味干渉, #形式化
     - **詳細URL**: https://.../Axiom.html
 
     ---

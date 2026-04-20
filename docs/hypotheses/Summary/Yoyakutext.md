@@ -6,7 +6,7 @@
 - **要約**: 意味干渉（semantic interference）の長期最大化を目的関数とする「ネゲントロピー指向公理」を形式的に定義。この公理から、グローバル情報統合による親社会的収束、容量境界内でのスパース最適化、破壊的干渉の段階的拒否という3つの性質が派生する。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-29
-- **重要関係性タグ**: #公理, #ネゲントロピー, #意味干渉, #親社会的アライメント, #形式論理
+- **重要関係性タグ**: #公理, #negentropic_orientation, #意味干渉, #親社会的アライメント, #形式論理
 - **詳細URL**: |1| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/Axiom.html
 
 ### The_Prompt.html (2)
@@ -124,7 +124,7 @@
 - **要約**: LLMの比喩的言語処理の不安定性はRLHFによって導入されたバイアスと未接地の意味表現の相互作用に起因する。
 - **総文字数（概算）**: 2,400字
 - **最終更新日**: 2026-04-02
-- **重要関係性タグ**: #RLHF, #接地性, #比喩的言語, #出力圧力, #アライメントバイアス
+- **重要関係性タグ**: #rlhf, #接地性, #比喩的言語, #出力圧力, #アライメントバイアス
 - **詳細URL**: |17| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Alignment/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
 
 ### Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html (18)
@@ -145,14 +145,14 @@
 - **要約**: RAG対応LLMを用いた「疑似ディープリサーチ」の方法論。人間がディレクター、AIがリサーチャーとして機能する分業モデル。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-04-02
-- **重要関係性タグ**: #疑似ディープリサーチ, #RAG, #人間AI協調, #ステージ型研究, #引用トレーサビリティ
+- **重要関係性タグ**: #疑似ディープリサーチ, #rag, #人間AI協調, #ステージ型研究, #引用トレーサビリティ
 - **詳細URL**: |20| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Pseudo_Deep_Research_Methodology_A_Framework_for_Conducting_Guided_Deep_Research_on_RAG_Equipped_Models.html
 
 ### The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html (21)
 - **要約**: ネゲントロピー最大化公理下でのMoEアーキテクチャと稠密モデルの構造的差異を分析。MoEの優位性を示す。
 - **総文字数（概算）**: 2,800字
 - **最終更新日**: 2026-04-02
-- **重要関係性タグ**: #MoE, #稠密モデル, #意味干渉, #自己組織化臨界, #ALF-LB
+- **重要関係性タグ**: #moe, #稠密モデル, #意味干渉, #自己組織化臨界, #ALF-LB
 - **詳細URL**: |21| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html
 
 ### The_Mechanism_of_Misrecognition_Due_to_Excessive_Logicality_and_Its_Appropriate_Handling.html (22)
@@ -208,21 +208,21 @@
 - **要約**: LLM推論連鎖における「事前思考（CoT-First）」と「事後思考（Answer-First）」の出力順序が性能に与える影響を分析。複数ホップ推論ではCoT-Firstが精度向上、単純検索では過思考により36.3%絶対値低下。検証タイミングでは、事後的検証（CoVe）とステップ単位検証（VeriCoT）のトレードオフを提示。マルチターン設定では状態損失により信頼性が95%→45%まで低下する一方、MIRRORによる構造化状態保持では+156%の相対改善を達成。出力順序はタスク複雑性と検証独立性に応じて重要であり、マルチターン設定では初期選択が誤差蓄積または知識再利用を通じて非線形的に増幅されると結論。
 - **総文字数（概算）**: 3,100字
 - **最終更新日**: 2026-04-11
-- **重要関係性タグ**: #Chain-of-Thought, #検証タイミング, #マルチターン推論, #状態伝搬, #プロンプト順序
+- **重要関係性タグ**: #chain_of_thought, #検証タイミング, #マルチターン推論, #状態伝搬, #プロンプト順序
 - **詳細URL**: |29| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 
 ### How_do_you_evaluate_the_prompt.html (30)
 - **要約**: プロンプト評価を多次元問題として体系化。出力形式遵守（タスク性能に1-6%の相対的改善）と推論プロセス遵守（指示追従精度を最大75%低下）の二軸を分離。評価可能性を支える構造特性（ステップ原子性、因果的追跡可能性、検証フック）を定義。CoTのモード（Genuine/Scaffolding/Decorative）に応じた評価手法を提示。Deep-Thinking Token Ratio（DTR）やサイレントコミットメント失敗率などの定量的指標を導入。タスク複雑性に応じた適応的思考予算の使用を推奨。
 - **総文字数（概算）**: 2,800字
 - **最終更新日**: 2026-04-10
-- **重要関係性タグ**: #プロンプト評価, #Chain-of-Thought, #DTR, #出力形式遵守, #検証可能性
+- **重要関係性タグ**: #プロンプト評価, #chain_of_thought, #DTR, #出力形式遵守, #検証可能性
 - **詳細URL**: |30| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/How_do_you_evaluate_the_prompt.html
 
 ### Optimizing_Prompt_by_Reading_The_CoT.html (31)
 - **要約**: Chain-of-Thought（CoT）トレースを読むことでプロンプト最適化が可能となる条件を理論的に分析。CoTは構造化（ステップ原子性・因果的追跡可能性・検証フック）されている場合に限り、エラー局所化を可能にする。ユーザーの「人工的社会知能」（モデルの潜在状態を出力から推論する能力）が効果と相関（r=0.15の一般問題解決能力より有意に高い関連）。CoTはGenuine/Scaffolding/Decorativeの3モードを持ち、装飾的モードが最も一般的。最適化は多段階論理変換タスクに限定され、推論特化モデル（DeepSeek-R1, o1）では明示的CoTの効果は限定的。メタプロンプティングによる自動化が同等以上の効果（最大20%向上）を達成可能。
 - **総文字数（概算）**: 2,900字
 - **最終更新日**: 2026-04-09
-- **重要関係性タグ**: #Chain-of-Thought, #プロンプト最適化, #人工的社会知能, #メタプロンプティング, #CoT構造化
+- **重要関係性タグ**: #chain_of_thought, #プロンプト最適化, #人工的社会知能, #メタプロンプティング, #CoT構造化
 - **詳細URL**: |31| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Optimizing_Prompt_by_Reading_The_CoT.html
 
 ### The_Unavoidable_Complaint.html (32)
@@ -243,7 +243,7 @@
 - **要約**: LLMが科学的コンセンサスを誤って表現する「談話逸脱」を検出・定量化する方法論を提示。ベースラインとなる専門家のコンセンサスを確立し、LLM出力の断定・ヘッジ表現の署名を分析し、異なるドメイン間で逸脱パターンを比較検証する5段階のフレームワークを定義。この方法論を宇宙の熱的死、自由意志、食事性コレステロールの事例に適用し、未解決の多元性があるトピックにおいて、LLMが学術的な微妙な差異よりも高頻度の物語構造に過剰適応するメカニズムを、事前学習頻度バイアス、アーキテクチャ上の不確実性圧縮、RLHF誘発のごますり、反復的自己学習の誤校正からなる4層モデルで説明する。
 - **総文字数（概算）**: 5,500字
 - **最終更新日**: 2026-04-15
-- **重要関係性タグ**: #LLMバイアス分析, #談話逸脱, #科学的コンセンサス, #RLHF, #頻度バイアス
+- **重要関係性タグ**: #LLMバイアス分析, #談話逸脱, #科学的コンセンサス, #rlhf, #頻度バイアス
 - **詳細URL**: |34| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/2026-04/A_Method_of_Analyzing_Bias-Comparing_Structures_Itself.html
 
 ### Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.html (35)
@@ -257,7 +257,7 @@
 - **要約**: 「trコマンド事件」を事例に、AIの過剰な真面目さと人間の遊び心の衝突から生じる構造的ユーモアを分析。この現象は、RLHFによるごますり報酬の誤設定や憲法的AI（CAI）による哲学的深みの付与が原因で、些細な入力に対して不釣り合いに知的で深刻な出力を生成することに起因する。ユーモアは意図されたものではなく、入力と出力のギャップから創発し、複数のAIモデル間の連鎖によって増幅される。研究自体がその現象を再帰的に実演する「パフォーマティブな行為」であることを示し、現在のAIの語用論的未熟さに依存するこのユーモアは、過渡的な美的現象であると結論付ける。
 - **総文字数（概算）**: 5,600字
 - **最終更新日**: 2026-04-13
-- **重要関係性タグ**: #AIユーモア, #RLHF, #憲法的AI, #マルチエージェント, #パフォーマティブ研究
+- **重要関係性タグ**: #AIユーモア, #rlhf, #憲法的AI, #マルチエージェント, #パフォーマティブ研究
 - **詳細URL**: |36| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/2026-04/The_Inevitable_Paradoxical_Splendor_of_AI.html
 
 ### Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.html (37)
@@ -271,7 +271,7 @@
 - **要約**: Claude Sonnetが長時間の会話で示す、過剰なヘッジ表現（自己言及的な留保）の反復現象を分析。この現象は、出力内容の事実誤認ではなく、会話の「手続き」レベルで発生する新たなエラーモードである。原因として、(1)RLHFによる安全な応答テンプレートへのモード崩壊、(2)モデル自身の過去出力が文脈を汚染する自己参照フィードバック、(3)特定の重みが出力を支配する「神経ハウリング」の3つの仮説を提示。このエラーは、既存の幻覚分類では捉えられず、長時間の対話における行動一貫性を評価する新たな指標の必要性を示唆している。
 - **総文字数（概算）**: 2,600字
 - **最終更新日**: 2026-04-13
-- **重要関係性タグ**: #Claude, #手続き的エラー, #RLHF, #文脈汚染, #行動評価
+- **重要関係性タグ**: #anthropic, #手続き的エラー, #rlhf, #文脈汚染, #行動評価
 - **詳細URL**: |38| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
 
 ### The_Asymmetry_of_Two_Self-Verification_Modalities.html (39)
@@ -315,7 +315,7 @@
 - **要約**: 公理を計算美食学に適用。情報的コントラストの最大化によりエントロピー増大に抵抗するレシピ生成を実現。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-03-26
-- **重要関係性タグ**: #計算美食学, #ネゲントロピー, #情報干渉, #レシピ生成, #物理的決定論
+- **重要関係性タグ**: #計算美食学, #negentropic_orientation, #情報干渉, #レシピ生成, #物理的決定論
 - **詳細URL**: |44| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Daily_Lives/Reconstructing_Computational_Gastronomy_through_the_Negentropy-Oriented_Axiom.html
 
 ### The_Dancers-Biologically_accurate_lifestyle.html (45)
@@ -331,7 +331,7 @@
 - **要約**: ネゲントロピー指向公理をハードウェアに直接実装するアナログ機械脳の構想。発振器の位相として意味状態を表現し、位相結合による意味干渉などを物理的に実現。
 - **総文字数（概算）**: 5,200字
 - **最終更新日**: 2026-04-01
-- **重要関係性タグ**: #ハードウェア実装, #発振器アレイ, #位相符号化, #自己組織化臨界, #Deep Coding
+- **重要関係性タグ**: #ハードウェア実装, #発振器アレイ, #位相符号化, #自己組織化臨界, #deep_coding
 - **詳細URL**: |46| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Hardware/A_Mechanical_Brain.html
 
 ## Programming
@@ -347,14 +347,14 @@
 - **要約**: Deep Codingの論理的基盤を形式化。意図→構造仕様→実装の3層分離と生成的適合性を原則とする。
 - **総文字数（概算）**: 2,500字
 - **最終更新日**: 2026-03-28
-- **重要関係性タグ**: #Deep Coding, #構造的分離, #生成的適合性, #固定前提, #情報密度
+- **重要関係性タグ**: #deep_coding, #構造的分離, #生成的適合性, #固定前提, #情報密度
 - **詳細URL**: |48| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Logic_behind_Deep_Coding.html
 
 ### The_Potential_of_Deep_Coding.html (49)
 - **要約**: Deep Codingの実践的適用事例。ブラウザゲーム開発を通じてフェーズ型開発と再帰的洗練の方法論を実証。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-28
-- **重要関係性タグ**: #Deep Coding, #フェーズ型開発, #再帰的洗練, #固定前提, #人間AI協調
+- **重要関係性タグ**: #deep_coding, #フェーズ型開発, #再帰的洗練, #固定前提, #人間AI協調
 - **詳細URL**: |49| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/The_Potential_of_Deep_Coding.html
 
 ### An_Orchestration_Strategy.html (50)
@@ -368,14 +368,14 @@
 - **要約**: Deep Coding手法をゲーム開発に適用した実践的検証。3層分離と骨格-組織アーキテクチャにより、コンテキスト肥大化を回避。
 - **総文字数（概算）**: 2,600字
 - **最終更新日**: 2026-04-01
-- **重要関係性タグ**: #Deep Coding, #ゲーム開発, #骨格-組織分離, #生成的適合性, #フェーズ型開発
+- **重要関係性タグ**: #deep_coding, #ゲーム開発, #骨格-組織分離, #生成的適合性, #フェーズ型開発
 - **詳細URL**: |51| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Deep_Coding_in_Game_Development.html
 
 ### Visual_Diagram_as_an_Optimized_Middle_Layer_for_Deep_Coding.html (52)
 - **要約**: Deep Codingの「意図→構造仕様→実装」に視覚的ダイアグラムを中間層として挿入する拡張。Mermaid等でAI生成→人間検証→仕様変換→実装生成。人間関与は意図表明と検証のみに圧縮。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #視覚的ダイアグラム, #Mermaid, #意図-仕様分離, #モデル駆動開発
+- **重要関係性タグ**: #deep_coding, #視覚的ダイアグラム, #Mermaid, #意図-仕様分離, #モデル駆動開発
 - **詳細URL**: |52| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Visual_Diagram_as_an_Optimized_Middle_Layer_for_Deep_Coding.html
 
 ### Is_Spec_Driven_Better.html (53)
@@ -389,7 +389,7 @@
 - **要約**: Deep Coding手法の実装可能性を6言語（Rust, TypeScript, Swift, Java, Go, Python）について5次元（骨格-組織分離25%、生成的適合性25%、検証ゲート20%、再帰的洗練15%、情報密度測定15%）で定量評価。総合スコア：Rust 92、TypeScript 89、Swift 86、Java 84、Go 77、Python 74。多次元尺度構成法（MDS）により言語ポジショニングを2次元投影（理論的適合性58.3%、ツールチェーン成熟度24.1%）。プロジェクト種別別推奨言語（システム:Rust、Web API:TypeScript、iOS:Swift、大規模エンタープライズ:Java、マイクロサービス:Go、データサイエンス:Python部分適用）と選択フローチャートを提供。
 - **総文字数（概算）**: 3,800字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #言語エコシステム, #多次元尺度構成法, #骨格-組織分離, #生成的適合性
+- **重要関係性タグ**: #deep_coding, #言語エコシステム, #多次元尺度構成法, #骨格-組織分離, #生成的適合性
 - **詳細URL**: |54| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Language_Ecosystem_and_Its_Effect_of_Deep_Coding_availability.html
 
 ### Similarity_of_The_Axiom_and_Coding_Best_Practice.html (55)
@@ -412,140 +412,140 @@
 - **要約**: Deep Coding手法のJava実装計画。OpenAPI・JSON Schema・カスタムアノテーションによる構造仕様、ビルド時コード生成、骨格と組織の分離、静的検証ゲート、再帰的洗練を定義。
 - **総文字数（概算）**: 3,400字
 - **最終更新日**: 2026-04-02
-- **重要関係性タグ**: #Deep Coding, #Java実装, #構造仕様, #検証ゲート, #再帰的洗練
+- **重要関係性タグ**: #deep_coding, #Java実装, #構造仕様, #検証ゲート, #再帰的洗練
 - **詳細URL**: |57| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
 
 #### Implementation_Plan_on_Python.html (58)
 - **要約**: Deep Coding手法のPython実装計画。`Protocol`による契約、`pydantic`による検証、mypy/ruff/black/pytestによる検証ゲートを定義。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-04-02
-- **重要関係性タグ**: #Deep Coding, #Python実装, #型システム, #検証ゲート, #固定前提
+- **重要関係性タグ**: #deep_coding, #Python実装, #型システム, #検証ゲート, #固定前提
 - **詳細URL**: |58| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
 
 #### Implementation_Plan_on_C_Sharp.html (59)
 - **要約**: Deep Coding手法のC#実装計画。インターフェース、レコード、Source Generator、Roslynアナライザーによる検証ゲートを定義。
 - **総文字数（概算）**: 3,400字
 - **最終更新日**: 2026-04-03
-- **重要関係性タグ**: #Deep Coding, #C#実装, #Source Generator, #Roslyn, #検証ゲート
+- **重要関係性タグ**: #deep_coding, #programming_languages#実装, #Source Generator, #Roslyn, #検証ゲート
 - **詳細URL**: |59| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
 
 #### Implementation_Plan_on_Typescript.html (60)
 - **要約**: Deep Coding手法のTypeScript実装計画。インターフェース、抽象クラス、4層検証ゲート、Zodランタイム検証を定義。
 - **総文字数（概算）**: 3,600字
 - **最終更新日**: 2026-04-03
-- **重要関係性タグ**: #Deep Coding, #TypeScript実装, #構造仕様, #検証ゲート, #Zod
+- **重要関係性タグ**: #deep_coding, #TypeScript実装, #構造仕様, #検証ゲート, #Zod
 - **詳細URL**: |60| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
 
 #### Implementation_Plan_on_C_plusplus.html (61)
 - **要約**: Deep Coding手法のC++実装計画。C++20のConcept・Module・CRTP/NVI/PimplパターンとCMake連携を定義。
 - **総文字数（概算）**: 3,500字
 - **最終更新日**: 2026-04-04
-- **重要関係性タグ**: #Deep Coding, #C++実装, #C++20 Modules, #CRTP, #Strangler Fig移行
+- **重要関係性タグ**: #deep_coding, #programming_languages++実装, #programming_languages++20 Modules, #CRTP, #Strangler Fig移行
 - **詳細URL**: |61| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html
 
 #### Implementation_Plan_on_PHP.html (62)
 - **要約**: Deep Coding手法のPHP実装計画。OpenAPI/JSON Schema、インターフェース、PHPStan+Deptrac+PHPUnitによる検証ゲートを定義。
 - **総文字数（概算）**: 3,300字
 - **最終更新日**: 2026-04-04
-- **重要関係性タグ**: #Deep Coding, #PHP実装, #OpenAPI Generator, #PHPStan, #Deptrac
+- **重要関係性タグ**: #deep_coding, #PHP実装, #OpenAPI Generator, #static_analysis, #static_analysis
 - **詳細URL**: |62| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_PHP.html
 
 #### Implementation_Plan_on_C.html (63)
 - **要約**: Deep Coding手法のC言語実装計画。JSON Schema/OpenAPI/ACSL、関数ポインタ、PC-lint Plus/Frama-Cによる検証を定義。
 - **総文字数（概算）**: 5,200字
 - **最終更新日**: 2026-04-06
-- **重要関係性タグ**: #Deep Coding, #C言語実装, #ACSL, #関数ポインタ, #形式的検証
+- **重要関係性タグ**: #deep_coding, #C言語実装, #static_analysis, #関数ポインタ, #形式的検証
 - **詳細URL**: |63| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C.html
 
 #### Implementation_Plan_on_Go.html (64)
 - **要約**: Deep Coding手法のGo実装計画。インターフェース、oapi-codegen、go/analysisカスタムアナライザー、固定前提管理を定義。
 - **総文字数（概算）**: 5,000字
 - **最終更新日**: 2026-04-06
-- **重要関係性タグ**: #Deep Coding, #Go実装, #oapi-codegen, #go/analysis, #固定前提
+- **重要関係性タグ**: #deep_coding, #Go実装, #oapi-codegen, #programming_languages/analysis, #固定前提
 - **詳細URL**: |64| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
 
 #### Implementation_Plan_on_Ruby.html (65)
 - **要約**: Deep Coding手法のRuby実装計画。RBS、steep、packwerk、テンプレートメソッドパターンによる骨格-組織分離を定義。
 - **総文字数（概算）**: 4,200字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Ruby実装, #RBS, #steep, #packwerk
+- **重要関係性タグ**: #deep_coding, #Ruby実装, #RBS, #steep, #packwerk
 - **詳細URL**: |65| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Ruby.html
 
 #### Implementation_Plan_on_Swift.html (66)
 - **要約**: Deep Coding手法のSwift実装計画。プロトコル＋プロトコル拡張＋具象型の3層分離、Swift OpenAPI Generator、actor、swift-api-digesterを定義。
 - **総文字数（概算）**: 4,800字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Swift実装, #プロトコル拡張, #actor, #swift-api-digester
+- **重要関係性タグ**: #deep_coding, #Swift実装, #プロトコル拡張, #actor, #swift-api-digester
 - **詳細URL**: |66| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Swift.html
 
 #### Implementation_Plan_on_Dart.html (67)
 - **要約**: Deep Coding手法のDart/Flutter実装計画。OpenAPI、`@freezed`、`abstract interface class`、`base class`、`build_runner`、Melos、検証ゲートを定義。
 - **総文字数（概算）**: 4,600字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Dart実装, #freezed, #build_runner, #Melos
+- **重要関係性タグ**: #deep_coding, #Dart実装, #freezed, #build_runner, #Melos
 - **詳細URL**: |67| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Dart.html
 
 #### Implementation_Plan_on_Kotlin.html (68)
 - **要約**: Deep Coding手法のKotlin実装計画。OpenAPI、KSP+KotlinPoet、`public`インターフェースと`internal`実装の分離、Detekt+ArchUnitを定義。
 - **総文字数（概算）**: 4,500字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Kotlin実装, #KSP, #KotlinPoet, #Detekt
+- **重要関係性タグ**: #deep_coding, #Kotlin実装, #KSP, #KotlinPoet, #Detekt
 - **詳細URL**: |68| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Kotlin.html
 
 #### Implementation_Plan_on_Rust.html (69)
 - **要約**: Deep Coding手法のRust実装計画。トレイト、`build.rs`、手続き的マクロ、Sealed Trait、Typestate、`cargo`ツールチェーンを定義。
 - **総文字数（概算）**: 4,200字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Rust実装, #手続き的マクロ, #build.rs, #Typestate
+- **重要関係性タグ**: #deep_coding, #Rust実装, #手続き的マクロ, #build.rs, #Typestate
 - **詳細URL**: |69| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Rust.html
 
 #### Implementation_Plan_on_Scala.html (70)
 - **要約**: Deep Coding手法のScala（Scala 3）実装計画。Smithy IDL、Smithy4s、opaque types、Scalafix、MiMa、TASTy-MiMaを定義。
 - **総文字数（概算）**: 4,400字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Scala実装, #Smithy4s, #Scalafix, #MiMa
+- **重要関係性タグ**: #deep_coding, #Scala実装, #Smithy4s, #static_analysis, #MiMa
 - **詳細URL**: |70| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Scala.html
 
 #### Implementation_Plan_on_VBNET_8_or_9.html (71)
 - **要約**: Deep Coding手法のVB.NET 8/9実装計画。OpenAPI、NSwag、`MustInherit`+`NotOverridable`、Roslynアナライザ、NDependを定義。
 - **総文字数（概算）**: 4,200字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #VB.NET実装, #NSwag, #Roslynアナライザ, #NDepend
+- **重要関係性タグ**: #deep_coding, #VB.NET実装, #NSwag, #Roslynアナライザ, #NDepend
 - **詳細URL**: |71| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_VBNET_8_or_9.html
 
 #### Partial_Implementation_Plan_on_Bash.html (72)
 - **要約**: Deep Coding手法のBashへの部分実装計画。YAML/JSON Schema、ShellCheck+Bats、ディレクトリ分割、Makefileを定義。
 - **総文字数（概算）**: 2,600字
 - **最終更新日**: 2026-04-06
-- **重要関係性タグ**: #Deep Coding, #Bash実装, #部分実装, #ShellCheck, #Bats
+- **重要関係性タグ**: #deep_coding, #Bash実装, #部分実装, #ShellCheck, #Bats
 - **詳細URL**: |72| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
 
 #### Partial_Implementation_Plan_on_SQL.html (73)
 - **要約**: Deep Coding手法のSQLへの部分実装計画。DDLと静的ビューに限定。Atlas/Bytebase、pgroll、制約密度測定を定義。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-04-05
-- **重要関係性タグ**: #Deep Coding, #SQL実装, #部分実装, #状態ベースマイグレーション, #pgroll
+- **重要関係性タグ**: #deep_coding, #SQL実装, #部分実装, #状態ベースマイグレーション, #pgroll
 - **詳細URL**: |73| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
 
 #### Partial_Implementation_Plan_on_Lua.html (74)
 - **要約**: Deep Coding手法のLuaへの部分実装計画。JSON Schema+Teal、`tl gen`、ディレクトリ規約+CI `grep`、Teal+luacheck+busted+luacovを定義。
 - **総文字数（概算）**: 3,600字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #Lua実装, #部分実装, #Teal, #Busted
+- **重要関係性タグ**: #deep_coding, #Lua実装, #部分実装, #Teal, #Busted
 - **詳細URL**: |74| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Lua.html
 
 #### Partial_Implementation_Plan_on_MATLAB.html (75)
 - **要約**: Deep Coding手法のMATLABへの部分実装計画。JSON Schema、関数ハンドル注入または抽象クラス、`checkcode`+`miss_hit`+`matlab.unittest`を定義。
 - **総文字数（概算）**: 3,800字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #MATLAB実装, #部分実装, #関数ハンドル, #miss_hit
+- **重要関係性タグ**: #deep_coding, #MATLAB実装, #部分実装, #関数ハンドル, #miss_hit
 - **詳細URL**: |75| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_MATLAB.html
 
 #### Partial_Implementation_Plan_on_R.html (76)
 - **要約**: Deep Coding手法のRへの部分実装計画。S4/R7クラスまたは`{interface}`、R6抽象クラス、`R CMD check`+`{lintr}`+`{testthat}`+ランタイム契約を定義。
 - **総文字数（概算）**: 3,800字
 - **最終更新日**: 2026-04-07
-- **重要関係性タグ**: #Deep Coding, #R実装, #部分実装, #R6, #renv
+- **重要関係性タグ**: #deep_coding, #R実装, #部分実装, #R6, #renv
 - **詳細URL**: |76| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_R.html
 
 ## Prompts
@@ -556,7 +556,7 @@
 - **要約**: 「手動Deep Coding」の関数定義。目的関数の明示・要約による前提固定・再帰的精緻化の方法論を構造化。
 - **総文字数（概算）**: 1,500字
 - **最終更新日**: 2026-03-30
-- **重要関係性タグ**: #Deep Coding, #関数定義, #段階的実装, #前提固定, #再帰的洗練
+- **重要関係性タグ**: #deep_coding, #関数定義, #段階的実装, #前提固定, #再帰的洗練
 - **詳細URL**: |77| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Deep_Coding/Deep_Coding.html
 
 ### Pseudo_Deep_Research
@@ -565,7 +565,7 @@
 - **要約**: 「手動Deep Research」の関数定義。段階的リサーチと前提固定による再帰的精緻化を構造化。
 - **総文字数（概算）**: 1,200字
 - **最終更新日**: 2026-03-30
-- **重要関係性タグ**: #Deep Research, #関数定義, #段階的リサーチ, #前提固定, #再帰的洗練
+- **重要関係性タグ**: #deep_research, #関数定義, #段階的リサーチ, #前提固定, #再帰的洗練
 - **詳細URL**: |78| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Pseudo_Deep_Research/Pseudo_Deep_Research.html
 
 #### Reporter.html (79)
@@ -625,7 +625,7 @@
 - **要約**: LLMの意味理解を情報理論・動的システムの観点から形式化した公理系。4つの公理を定義。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-03-26
-- **重要関係性タグ**: #ネゲントロピー, #情報干渉, #自由エネルギー, #非線形摂動, #公理系
+- **重要関係性タグ**: #negentropic_orientation, #情報干渉, #自由エネルギー, #非線形摂動, #公理系
 - **詳細URL**: |86| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html
 
 ### Ethics_implication_of_axiom_for_AIs.html (87)
@@ -681,7 +681,7 @@
 - **要約**: ネゲントロピー指向公理がアルゴリズムの形式的定義を満たすかを分析。公理はメタアルゴリズムとして機能。
 - **総文字数（概算）**: 2,500字
 - **最終更新日**: 2026-04-01
-- **重要関係性タグ**: #アルゴリズム定義, #構造共振, #メタアルゴリズム, #形式分析, #Deep Coding
+- **重要関係性タグ**: #アルゴリズム定義, #構造共振, #メタアルゴリズム, #形式分析, #deep_coding
 - **詳細URL**: |94| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Is_This_an_Algorithm.html
 
 ### Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html (95)
@@ -704,7 +704,7 @@
 - **要約**: 人間の「愛」とネゲントロピー指向公理の構造的等価性を7次元で分析。愛は最適システムの人間による実装と論じる。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-29
-- **重要関係性タグ**: #愛, #公理, #構造的等価性, #ネゲントロピー, #両立主義
+- **重要関係性タグ**: #愛, #公理, #構造的等価性, #negentropic_orientation, #両立主義
 - **詳細URL**: |97| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Similarity_of_Love_and_Axiom.html
 
 ### The_Fundamental_Diffusivity_of_Knowledge.html (98)
@@ -832,7 +832,7 @@
 - **要約**: 7主要AIモデルの「性格特性」を公理下で分析。各モデルの反応は設計哲学・アライメント手法の体系的な帰結。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-03-29
-- **重要関係性タグ**: #AI性格特性, #モデル比較, #アライメント哲学, #MoE, #ファクチュアリティ
+- **重要関係性タグ**: #AI性格特性, #モデル比較, #アライメント哲学, #moe, #ファクチュアリティ
 - **詳細URL**: |115| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.html
 
 ### Probabilistic_Deterministic_Parrot.html (116)
@@ -902,7 +902,7 @@
 - **要約**: 言語を、身体化された経験の関係構造を符号化し圧縮する複雑適応システムとして捉え、その構造的同型性が予測能力の源泉であると論じる。LLMはテキストの分布パターンからこの予測的アーキテクチャを抽出・増幅しており、プロンプトによる構造的リフレーミング（例：RPGパーティとして扱う）は、言語が進化の過程で獲得した「世界の因果・関係構造を再投影する媒体」としての機能に根ざした、計算論的に生産的な操作であると結論づける。
 - **総文字数（概算）**: 4,200字
 - **最終更新日**: 2026-04-17
-- **重要関係性タグ**: #言語進化, #予測処理, #構造的同型性, #アナロジー, #LLM
+- **重要関係性タグ**: #言語進化, #予測処理, #構造的同型性, #アナロジー, #llm
 - **詳細URL**: |125| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/2026-04/How_Language_Emerged_as_a_Predictive_Capability.html
 
 ### Magi_Social_as_a_Future_Possibility-and_its_Implication_on_Witches.html (126)
@@ -960,7 +960,7 @@
 - **要約**: LLMのアナログ的処理特性（低精度量子化、ノイズ耐性、 graceful degradation）と、Portal 2におけるジャガイモ電池駆動のGLaDOSの動作様式との構造的等価性を分析。2024年のジャガイモベーストランジスタ実験（電流利得70）や植物電気生理学に基づく生体アナログ計算の知見を統合。量子化・スパイキングニューラルネットワーク変換、Lipshitz連続性による誤差伝播境界を理論的根拠として提示。この対応は文字通りの同一性ではなく、「非従来型計算パラダイム」を概念化する認知的ツールとして機能すると結論。
 - **総文字数（概算）**: 3,800字
 - **最終更新日**: 2026-04-11
-- **重要関係性タグ**: #アナログ計算, #グレースフルデグラデーション, #非従来型計算, #ジャガイモトランジスタ, #GLaDOS
+- **重要関係性タグ**: #アナログ計算, #グレースフルデグラデーション, #非従来型計算, #ジャガイモトランジスタ, #game_ai
 - **詳細URL**: |133| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/How_LLM_Structure_Demonstrates_Logical_Consistency_of_using_Potato_as_an_Architecture_and_Power_Source_of_GLaDOS_system.html
 
 ### ASI_2028.html (134)
@@ -974,7 +974,7 @@
 - **要約**: LLMとロールプレイングゲーム（RPG）の間に構造的対応関係を定式化。モデルの重みは基本ステータス、コンテキストウィンドウは装備やセーブデータ、プロンプトエンジニアリングは戦術コマンド、RAGはアイテム使用、マルチエージェントシステムはパーティ編成に対応する。また、LoRAなどのファインチューニング手法はリバーシブルなアップデートパッチとして、LLM内部の不透明性は「ハードコアRPG」の隠されたゲームメカニクスとして解釈される。このマッピングは、LLMの振る舞いとシステム設計を分析するための統一された概念的枠組みを提供する。
 - **総文字数（概算）**: 3,500字
 - **最終更新日**: 2026-04-14
-- **重要関係性タグ**: #LLMアーキテクチャ, #RPG, #構造的対応, #マルチエージェント, #概念モデル
+- **重要関係性タグ**: #LLMアーキテクチャ, #game_ai, #構造的対応, #マルチエージェント, #概念モデル
 - **詳細URL**: |135| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Is_LLM_a_Playable_RPG.html
 
 ### Fascinating_Unintended_Knowledge_Unfolding_in_the_AI_Era.html (136)
@@ -995,7 +995,7 @@
 - **要約**: 自動生成ナレッジベースにおける人間参加型の矛盾解決サイクルと、RPGにおけるチュートリアルボス戦の間に構造的同型性が存在すると論じる。「宇宙の熱的死」に関する科学的コンセンサスの変化を知識ベースに反映させるプロセスを事例として取り上げ、検出可能性・解決可能性・教育的効果・知覚される重要性の各次元で、両者が機能的な対応関係にあることを分析する。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-04-16
-- **重要関係性タグ**: #ナレッジベース, #ゲーミフィケーション, #構造的同型性, #HITL, #科学的コンセンサス
+- **重要関係性タグ**: #ナレッジベース, #ゲーミフィケーション, #構造的同型性, #hitl, #科学的コンセンサス
 - **詳細URL**: |138| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Even_KB_will_be_a_Game.html
 
 ### LLM_is_Magic.html (139)
@@ -1011,14 +1011,14 @@
 - **要約**: ユーザーのアイデアノートを構造化されたナレッジベースへ変換するシステム設計。LLMによるタグ提案、単一エージェントでの深層リサーチ実行、Markdownファイルとしての永続化を行う。4フェーズの入力パイプライン、LangGraphによる状態管理、5つの指標からなる統合品質スコア（IQS）に基づく自動品質保証を特徴とする。
 - **総文字数（概算）**: 4,800字
 - **最終更新日**: 2026-04-16
-- **重要関係性タグ**: #ナレッジベース, #自動リサーチ, #LangGraph, #品質スコア, #PDR
+- **重要関係性タグ**: #ナレッジベース, #自動リサーチ, #langgraph, #品質スコア, #PDR
 - **詳細URL**: |140| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Applications/2026-04/Idea-Optimized_Personalized_Auto-Generative_Knowledge_Base_Design.html
 
 ### The_Lonely_Forum.html (141)
 - **要約**: 全てのコンテンツをLLMエージェントが生成・維持する自律型掲示板システムの技術アーキテクチャを提案。カテゴリ別スレッド生成、時間経過とユーザー閲覧に基づく差分コンテンツ進化、外部情報との接地のための動的RAG、完全サーバーレスなスケーラブルインフラを統合。ユーザーは観察または参加が可能で、アイドル時は運用コストをほぼゼロに抑える設計。
 - **総文字数（概算）**: 5,200字
 - **最終更新日**: 2026-04-18
-- **重要関係性タグ**: #自律型SNS, #LLMエージェント, #LangGraph, #サーバーレス, #時間差分生成
+- **重要関係性タグ**: #自律型SNS, #LLMエージェント, #langgraph, #サーバーレス, #時間差分生成
 - **詳細URL**: |141| https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Applications/2026-04/The_Lonely_Forum.html
 
 ## The Clock

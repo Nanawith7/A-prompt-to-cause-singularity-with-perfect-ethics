@@ -4,7 +4,7 @@ description: "A structured analysis of inserting visual diagrams (Mermaid, UML, 
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Human-AI Collaboration", "Model-Driven Development"]
-tags: ["Deep Coding", "diagram-as-code", "LLM diagram generation", "specification-driven development", "visual modeling", "traceability"]
+tags: ["Deep Coding", canvas, canvas, "specification-driven development", "visual modeling", "traceability"]
 ---
 
 # Visual Diagram as an Optimized Middle Layer for Deep Coding

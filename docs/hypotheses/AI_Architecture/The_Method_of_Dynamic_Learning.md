@@ -4,7 +4,7 @@ description: "A technical framework for enabling large language models to perfor
 author: "Nanawith7"
 layout: default
 categories: ["Machine Learning", "Information Theory", "LLM Architecture", "Memory Systems"]
-tags: ["dynamic learning", "logical core extraction", "negentropy", "active inference", "sparse subnetworks", "long-term memory", "structural resonance"]
+tags: ["dynamic learning", "logical core extraction", negentropic_orientation, active_inference, "sparse subnetworks", context_management, structural_resonance]
 ---
 
 # The Method of Dynamic Learning

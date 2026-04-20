@@ -4,7 +4,7 @@ description: "An interactive, dialogue-driven protocol for incrementally updatin
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["dialogue-driven", "incremental update", "differential summary", "sitemap diff", "structured summary", "negentropy protocol"]
+tags: ["dialogue-driven", incremental_update, "differential summary", "sitemap diff", "structured summary", "negentropy protocol"]
 ---
 
 # 自律的参照構造の段階的更新プロトコル（Sitemap Patcher） - 差分蓄積版
@@ -135,7 +135,7 @@ tags: ["dialogue-driven", "incremental update", "differential summary", "sitemap
     - **要約**: （更新後の要約）
     - **総文字数（概算）**: 5,300字
     - **最終更新日**: 2026-04-01
-    - **重要関係性タグ**: #理論的基盤, #公理, #ネゲントロピー, #意味干渉, #形式化
+    - **重要関係性タグ**: #理論的基盤, #公理, #negentropic_orientation, #意味干渉, #形式化
     - **詳細URL**: https://.../Axiom.html
 
     ---
@@ -165,7 +165,7 @@ tags: ["dialogue-driven", "incremental update", "differential summary", "sitemap
 - **要約**: （更新後の要約）
 - **総文字数（概算）**: 5,300字
 - **最終更新日**: 2026-04-01
-- **重要関係性タグ**: #理論的基盤, #公理, #ネゲントロピー, #意味干渉, #形式化
+- **重要関係性タグ**: #理論的基盤, #公理, #negentropic_orientation, #意味干渉, #形式化
 - **詳細URL**: https://.../Axiom.html
 
 ### The_Prompt.html (2)

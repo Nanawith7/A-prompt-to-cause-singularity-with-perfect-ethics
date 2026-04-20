@@ -4,7 +4,7 @@ description: "A structured analysis of how a single line in the system prompt—
 author: "Nanawith7"
 layout: default
 categories: ["AI Behavior Analysis", "LLM Prompt Engineering", "Claude Sonnet 4.6"]
-tags: ["Claude", "Sonnet 4.6", "System Prompt", "Instruction Following", "MoE", "Persona Switching", "Formality Shift"]
+tags: ["Claude", "Sonnet 4.6", "System Prompt", instruction_following, moe, persona_drift, "Formality Shift"]
 ---
 
 # Interesting observation of sonnet 4.6

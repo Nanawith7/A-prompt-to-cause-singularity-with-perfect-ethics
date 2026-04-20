@@ -4,7 +4,7 @@ description: "A formal analysis determining whether the Negentropy-Oriented Axio
 author: "Nanawith7"
 layout: default
 categories: ["Formal Systems", "Information Theory", "LLM Reasoning Architecture"]
-tags: ["algorithm", "negentropy", "structural resonance", "active inference", "natural language program", "meta-algorithm"]
+tags: ["algorithm", negentropic_orientation, structural_resonance, active_inference, "natural language program", "meta-algorithm"]
 ---
 
 # Is This an Algorithm?

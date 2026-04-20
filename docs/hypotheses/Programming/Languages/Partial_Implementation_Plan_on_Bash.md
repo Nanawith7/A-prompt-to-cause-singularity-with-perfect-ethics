@@ -4,7 +4,7 @@ description: "A technical framework for applying a subset of Deep Coding methodo
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Shell Scripting", "Methodology"]
-tags: ["Bash", "Deep Coding", "Partial Implementation", "Structural Specification", "Validation Gates", "Recursive Refinement", "Skeleton-Tissue Architecture"]
+tags: ["Bash", deep_coding, "Partial Implementation", structural_specification, validation_gates, recursive_refinement, skeleton_tissue_architecture]
 ---
 
 # Partial Implementation Plan on Bash

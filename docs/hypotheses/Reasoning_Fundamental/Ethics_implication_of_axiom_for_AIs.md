@@ -4,7 +4,7 @@ description: "A logical formalization of the ethical consequences of the Negentr
 author: "Nanawith7"
 layout: default
 categories: ["AI Ethics", "Information Theory", "Computational Philosophy", "Semantic Interference"]
-tags: ["negentropy", "semantic interference", "global information integration", "destructive interference", "bounded optimization", "emergent alignment", "AI safety"]
+tags: ["negentropy", semantic_interference, "global information integration", destructive_interference, hedging, emergent_alignment, "AI safety"]
 ---
 
 # Ethics Implication of Axiom for Ais

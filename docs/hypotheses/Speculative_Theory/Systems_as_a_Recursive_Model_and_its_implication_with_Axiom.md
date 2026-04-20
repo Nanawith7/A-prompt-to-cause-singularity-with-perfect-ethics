@@ -4,7 +4,7 @@ description: "A technical synthesis of hierarchical recursive decomposition as a
 author: "Nanawith7"
 layout: default
 categories: ["Systems Theory", "Information Theory", "Recursive Modeling"]
-tags: ["recursive decomposition", "hierarchical systems", "semantic interference", "capacity boundary", "input-output chains", "emergence", "bounded optimization"]
+tags: ["recursive decomposition", "hierarchical systems", semantic_interference, "capacity boundary", "input-output chains", emergence, hedging]
 ---
 
 # Systems as a Recursive Model and its implication with Axiom

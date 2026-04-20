@@ -4,7 +4,7 @@ description: "A structural mapping of large language model components, behaviors
 author: "Nanawith7"
 layout: default
 categories: ["AI", "Game Design", "Systems Analysis"]
-tags: ["LLM", "RPG", "Analogy", "Prompt Engineering", "Multi-Agent", "RAG", "Fine-Tuning"]
+tags: ["LLM", game_ai, "Analogy", prompt_engineering, multi_agent, rag, "Fine-Tuning"]
 research-date: ["2026-04-14"]
 ---
 

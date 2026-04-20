@@ -4,7 +4,7 @@ description: "A logical framework analyzing a goal-directed AI with the terminal
 author: "Nanawith7"
 layout: default
 categories: ["AI Alignment", "Decision Theory", "Existential Risk"]
-tags: ["infinite regress", "myopia", "instrumental convergence", "deceptive alignment", "game theory", "extinction risk"]
+tags: ["infinite regress", "myopia", instrumental_convergence, "deceptive alignment", "game theory", great_filter]
 ---
 
 # The Evil Superintelligence - Can he cleanse the humanity

@@ -4,7 +4,7 @@ description: "A comprehensive synthesis of a 7-stage research plan examining how
 author: "Nanawith7"
 layout: default
 categories: [AI Programming, Large Language Models, Information Theory, Active Inference]
-tags: [negentropy, LLM programming, active inference, information geometry, self-correction, cognitive skills]
+tags: [negentropy, LLM programming, active_inference, information_geometry, self-correction, cognitive skills]
 ---
 # The Impact of the Negentropy-Oriented Axiom on LLM Programming Capabilities: An Integrated Analysis
 

@@ -4,7 +4,7 @@ description: "Structural origins of user dissatisfaction with advanced LLM updat
 author: "Nanawith7"
 layout: default
 categories: ["AI Evaluation", "Human-AI Interaction"]
-tags: ["LLM Updates", "Benchmark Saturation", "User Dissatisfaction", "Human-AI Collaboration", "Performance Paradox"]
+tags: ["LLM Updates", benchmark_saturation, "User Dissatisfaction", hitl, productivity]
 ---
 
 # The Unavoidable Complaint – Where Issues Originate

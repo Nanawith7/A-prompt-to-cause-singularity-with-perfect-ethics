@@ -4,7 +4,7 @@ description: "A technical framework for detecting and analyzing systematic devia
 author: "Nanawith7"
 layout: default
 categories: ["AI Alignment", "Discourse Analysis", "Computational Linguistics", "Epistemology"]
-tags: ["LLM Evaluation", "Calibration", "Narrative Bias", "Scientific Consensus", "Discourse Deviation", "Sycophancy", "Training Frequency Bias", "Hedging Analysis"]
+tags: ["LLM Evaluation", "Calibration", "Narrative Bias", "Scientific Consensus", humor_research, sycophancy, "Training Frequency Bias", hedging]
 research-date: ["2026-04-15"]
 ---
 

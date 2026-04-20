@@ -4,7 +4,7 @@ description: "An interactive, dialogue‑driven protocol for comparing an existi
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["dialogue-driven", "incremental update", "verifiability", "sitemap diff", "structured summary"]
+tags: ["dialogue-driven", incremental_update, "verifiability", "sitemap diff", "structured summary"]
 ---
 
 # 自律的参照構造の段階的更新プロトコル（Sitemap Patcher）
@@ -128,7 +128,7 @@ tags: ["dialogue-driven", "incremental update", "verifiability", "sitemap diff",
     - **要約**: （更新後の要約）
     - **総文字数（概算）**: 5,300字
     - **最終更新日**: 2026-04-01
-    - **重要関係性タグ**: #理論的基盤, #公理, #ネゲントロピー, #意味干渉, #形式化
+    - **重要関係性タグ**: #理論的基盤, #公理, #negentropic_orientation, #意味干渉, #形式化
     - **詳細URL**: https://.../Axiom.html
 
     ...（他のページは既存要約のまま）

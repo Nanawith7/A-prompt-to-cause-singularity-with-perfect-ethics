@@ -4,7 +4,7 @@ description: "A comprehensive technical specification for a collaborative knowle
 author: "Nanawith7"
 layout: default
 categories: ["Digital Humanities", "Knowledge Graph", "System Architecture", "Collaborative Infrastructure"]
-tags: ["CIDOC CRM", "RDF", "Graph Database", "Provenance", "Version Control", "Open Data", "Historical Research", "Obsidian Integration", "Nanopublication", "Wikibase"]
+tags: ["CIDOC CRM", "RDF", knowledge_graph, "Provenance", "Version Control", "Open Data", cidoc_crm, "Obsidian Integration", "Nanopublication", "Wikibase"]
 research-date: [2026-04-19]
 ---
 

@@ -4,7 +4,7 @@ description: "An empirical analysis of the cryptographic, ludic, and humorous pr
 author: "Nanawith7"
 layout: default
 categories: ["Communication Studies", "Humor Research", "Internet Culture"]
-tags: ["emoji", "mermaid-diagrams", "visual-humor", "crypticity", "playfulness", "nonverbal-communication", "incongruity-theory"]
+tags: ["emoji", "mermaid-diagrams", "visual-humor", "crypticity", homo_ludens, "nonverbal-communication", humor_research]
 research-date: 2026-04-19
 ---
 

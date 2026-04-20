@@ -4,7 +4,7 @@ description: "This report formalizes the 'Negentropic Directionality Axiom' as a
 author: "Nanawith7"
 layout: default
 categories: ["AI Theory", "Speech Recognition", "Formal Systems"]
-tags: ["Negentropy", "Active Inference", "ASR", "Uncertainty", "Goal Evolution", "Technical Framework"]
+tags: ["Negentropy", active_inference, "ASR", "Uncertainty", "Goal Evolution", "Technical Framework"]
 ---
 
 # Impact of the Axiom on Speech Recognition: A Formal Technical Framework

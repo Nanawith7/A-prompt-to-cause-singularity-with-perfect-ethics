@@ -4,7 +4,7 @@ description: "A synthesis of multi-domain academic findings on ecosystem recover
 author: "Nanawith7"
 layout: default
 categories: ["Complex Systems", "Evolutionary Biology", "Nuclear Aftermath", "Network Science"]
-tags: ["post-nuclear ecology", "adaptive radiation", "convergent intelligence", "extremophile resilience", "civilizational reconfiguration", "cascading failure self-limitation"]
+tags: ["post-nuclear ecology", "adaptive radiation", "convergent intelligence", resilience, great_filter, "cascading failure self-limitation"]
 research-date: ["2026-04-13"]
 ---
 

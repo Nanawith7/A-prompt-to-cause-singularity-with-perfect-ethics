@@ -4,7 +4,7 @@ description: "A formalized logical framework for integrating negentropy-directed
 author: "Nanawith7"
 layout: "default"
 categories: ["Artificial Intelligence", "Generative Models", "Systems Theory"]
-tags: ["Negentropy", "Diffusion Models", "Active Inference", "Generative AI", "Human-AI Interaction", "Dynamic Control", "Semantic Density"]
+tags: ["Negentropy", "Diffusion Models", active_inference, "Generative AI", hitl, "Dynamic Control", information_density]
 ---
 
 # Axiom and Picture

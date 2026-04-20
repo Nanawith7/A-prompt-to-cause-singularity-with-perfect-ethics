@@ -4,7 +4,7 @@ description: "A technical implementation framework for applying Deep Coding meth
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "C#", "AI-Assisted Development", "Methodology"]
-tags: ["Deep Coding", "C#", "Generative Conformance", "Structural Specification", "Source Generators", "Roslyn Analyzers", "NetArchTest", "Recursive Refinement"]
+tags: ["Deep Coding", programming_languages, generative_conformance, structural_specification, "Source Generators", static_analysis, "NetArchTest", recursive_refinement]
 ---
 
 # Implementation Plan on C Sharp

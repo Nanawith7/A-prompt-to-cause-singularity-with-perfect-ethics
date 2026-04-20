@@ -4,7 +4,7 @@ description: "A formalized logical framework for AI-driven software construction
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Formal Methods", "AI-Assisted Development"]
-tags: ["Deep Coding", "Generative Conformance", "Structural Specification", "Recursive Refinement", "Negentropy", "Correctness by Construction", "Skeleton Architecture"]
+tags: ["Deep Coding", generative_conformance, structural_specification, recursive_refinement, negentropic_orientation, "Correctness by Construction", skeleton_tissue_architecture]
 ---
 
 # Logic behind Deep Coding

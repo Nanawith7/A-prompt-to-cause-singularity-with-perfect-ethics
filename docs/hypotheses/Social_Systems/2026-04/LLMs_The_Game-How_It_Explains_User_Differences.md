@@ -4,7 +4,7 @@ description: "A systematic analysis of large language model user behavior throug
 author: "Nanawith7"
 layout: default
 categories: ["AI", "Human-Computer Interaction", "Behavioral Analysis"]
-tags: ["LLM", "RPG", "User Behavior", "Prompt Engineering", "Productivity", "Skill Gap", "Adaptation", "Game Mechanics"]
+tags: ["LLM", game_ai, "User Behavior", prompt_engineering, productivity, "Skill Gap", "Adaptation", "Game Mechanics"]
 research-date: ["2026-04-14"]
 ---
 

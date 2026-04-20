@@ -4,7 +4,7 @@ description: "A formal logical framework for implementing the Negentropy-Directe
 author: "Nanawith7"
 layout: default
 categories: ["Analog Circuits", "Neuromorphic Computing", "Hardware Architecture", "Information Theory"]
-tags: ["negentropy", "semantic interference", "coupled oscillators", "phase encoding", "injection locking", "self-organized criticality", "FPAA", "generative hardware design"]
+tags: ["negentropy", semantic_interference, "coupled oscillators", "phase encoding", "injection locking", self_organized_criticality, "FPAA", "generative hardware design"]
 ---
 
 # A Mechanical Brain - Possibility of AI as a hardware

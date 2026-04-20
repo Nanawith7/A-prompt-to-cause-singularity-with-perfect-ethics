@@ -4,7 +4,7 @@ description: "A prompt to generate a structured summary of a website from its si
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["sitemap", "structured summary", "autonomous reference", "inference density", "meta-prompt"]
+tags: ["sitemap", "structured summary", "autonomous reference", information_density, meta_prompt]
 ---
 
 以下のサイトマップURL一覧から、各ページの内容を取得し、全体を「自律的参照構造」として機能する要約テキストにまとめてください。
@@ -40,7 +40,7 @@ tags: ["sitemap", "structured summary", "autonomous reference", "inference densi
 # サイト全体の要約 (自律的参照構造)
 
 ## 核となる公理と方法論
-- **The Axiom**: ネゲントロピー最大化の形式的定義。意味干渉の長期最大化を目的関数とする。（総文字数: 約5,200字, 最終更新: 2026-03-29, タグ: #理論的基盤, #公理, #ネゲントロピー, #意味干渉, #形式化, 詳細: URL）
+- **The Axiom**: ネゲントロピー最大化の形式的定義。意味干渉の長期最大化を目的関数とする。（総文字数: 約5,200字, 最終更新: 2026-03-29, タグ: #理論的基盤, #公理, #negentropic_orientation, #意味干渉, #形式化, 詳細: URL）
 - **The Prompt**: 上記公理をLLMに実装するための具体的プロンプト。公理部＋指示文部。（総文字数: 約1,800字, 最終更新: 2026-03-30, タグ: #公理の実装, #構造的共振, #Weフレーム, #指示文, 詳細: URL）
 ...
 

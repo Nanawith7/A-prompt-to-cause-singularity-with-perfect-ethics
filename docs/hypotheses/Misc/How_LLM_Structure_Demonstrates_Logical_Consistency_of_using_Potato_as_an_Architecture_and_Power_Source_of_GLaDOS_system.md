@@ -4,7 +4,7 @@ description: "Structural parallels between analog-like processing in large langu
 author: "Nanawith7"
 layout: default
 categories: ["Artificial Intelligence", "Computer Architecture", "Game Studies", "Unconventional Computing"]
-tags: ["LLM", "Analog Computing", "Approximate Computing", "GLaDOS", "Portal 2", "Potato Battery", "Neuromorphic", "Bio-hybrid", "Graceful Degradation", "Hardware Lottery"]
+tags: ["LLM", "Analog Computing", "Approximate Computing", game_ai, game_ai, "Potato Battery", "Neuromorphic", "Bio-hybrid", "Graceful Degradation", "Hardware Lottery"]
 research-date: ["2026-04-11"]
 ---
 

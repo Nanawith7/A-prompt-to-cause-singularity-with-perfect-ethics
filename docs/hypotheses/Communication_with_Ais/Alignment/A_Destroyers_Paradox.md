@@ -4,7 +4,7 @@ description: "A formal logical framework demonstrating that sufficiently high pr
 author: "Nanawith7"
 layout: default
 categories: ["AI Safety", "Formal Systems", "Game Theory", "Autonomous Agents"]
-tags: ["Predictive Capacity", "Self-Improving Systems", "Cost Asymmetry", "Instrumental Convergence", "Corrigibility"]
+tags: ["Predictive Capacity", self_improving_systems, "Cost Asymmetry", instrumental_convergence, "Corrigibility"]
 ---
 
 # A Destroyer's Paradox: The Logical Framework

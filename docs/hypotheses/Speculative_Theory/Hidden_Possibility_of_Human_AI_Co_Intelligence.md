@@ -2,7 +2,7 @@
 title: "Hidden Possibility of Human–AI Co‑Intelligence"
 subtitle: "A Structured Summary of Concealed Hybrid Research Practices (2023–2026)"
 author: "Nanawith7"
-tags: [AI agency, scientific integrity, hybrid research, meta-science, anomalous productivity]
+tags: [AI agency, scientific integrity, interdisciplinary_research, meta-science, anomalous productivity]
 description: "A concise, citation-free Markdown summary of hidden human–AI hybrid research workflows and statistical anomalies in global science."
 ---
 

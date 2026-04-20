@@ -4,7 +4,7 @@ description: "A unified theoretical framework demonstrating that universal narra
 author: "Nanawith7"
 layout: default
 categories: ["Social Systems", "Complex Systems Theory", "Philosophy of Narrative"]
-tags: ["Negentropy", "Narrative Universals", "Hero‘s Journey", "Cultural Homeostasis", "Free Will", "Information Theory"]
+tags: ["Negentropy", "Narrative Universals", "Hero‘s Journey", "Cultural Homeostasis", free_will, "Information Theory"]
 ---
 
 # On the Universality of Narrative Structures and Their Relation to the Negentropic Orientation Axiom

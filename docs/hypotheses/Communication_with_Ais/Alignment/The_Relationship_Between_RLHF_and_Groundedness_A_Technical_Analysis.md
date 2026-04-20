@@ -4,7 +4,7 @@ description: "An analysis of how Reinforcement Learning from Human Feedback (RLH
 author: "Nanawith7"
 layout: default
 categories: [AI Alignment, Reinforcement Learning, Language Models]
-tags: [RLHF, grounding, sycophancy, alignment tax, persona drift]
+tags: [RLHF, faithfulness, sycophancy, alignment tax, persona_drift]
 ---
 
 # The Relationship Between RLHF and Groundedness: A Technical Analysis

@@ -4,7 +4,7 @@ description: "An examination of structural correspondences between video game ge
 author: "Nanawith7"
 layout: default
 categories: ["Game Studies", "Cognitive Science", "Educational Psychology"]
-tags: ["Metacognition", "Transfer of Learning", "Video Games", "Mathematical Models", "Serious Games", "Cognitive Training", "Genre Diversity"]
+tags: ["Metacognition", "Transfer of Learning", "Video Games", "Mathematical Models", game_ai, "Cognitive Training", diversity_optimization]
 research-date: [2026-04-18]
 ---
 

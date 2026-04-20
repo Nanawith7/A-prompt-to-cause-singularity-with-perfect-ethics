@@ -4,7 +4,7 @@ description: "A systematic analysis of network self-limitation, cascading failur
 author: "Nanawith7"
 layout: default
 categories: ["Complex Systems", "Network Science", "Societal Dynamics"]
-tags: ["cascading failure", "self-limiting cascade", "network fragmentation", "informational negentropy", "dissipative structures", "state capacity", "polycrisis", "resilience engineering"]
+tags: ["cascading failure", "self-limiting cascade", "network fragmentation", negentropic_orientation, complex_systems, "state capacity", great_filter, resilience]
 research-date: ["2026-04-13"]
 ---
 

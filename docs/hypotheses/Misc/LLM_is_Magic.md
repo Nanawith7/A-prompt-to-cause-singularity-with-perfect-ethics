@@ -4,7 +4,7 @@ description: "Comparative analysis of the functional and operational structures 
 author: "Nanawith7"
 layout: default
 categories: ["AI Systems", "Comparative Semiotics"]
-tags: ["LLM Agents", "Magic Systems", "Structural Isomorphism", "Tool Use", "Emergent Behavior", "Symbol Grounding"]
+tags: ["LLM Agents", "Magic Systems", structural_isomorphism, "Tool Use", emergence, faithfulness]
 research-date: ["2026-04-17"]
 ---
 
