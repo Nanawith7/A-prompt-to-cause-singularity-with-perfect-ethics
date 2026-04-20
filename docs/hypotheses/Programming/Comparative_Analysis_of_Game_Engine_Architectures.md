@@ -4,7 +4,7 @@ description: "A technical synthesis of program design patterns in game developme
 author: "Nanawith7"
 layout: default
 categories: ["Game Development", "Software Architecture", "Performance Engineering"]
-tags: ["ECS", "Data-Oriented Design", "Component Pattern", "Multiplayer Synchronization", "Unity DOTS", "Unreal Engine", "Lockstep", "Rollback"]
+tags: ["ECS", "Data-Oriented_Design", "Component_Pattern", "Multiplayer_Synchronization", "Unity_DOTS", "Unreal_Engine", "Lockstep", "Rollback"]
 research-date: 2026-04-11
 ---
 

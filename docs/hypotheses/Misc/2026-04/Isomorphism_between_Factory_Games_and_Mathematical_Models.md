@@ -4,7 +4,7 @@ description: "An objective analysis of the structural correspondence between fac
 author: "Nanawith7"
 layout: default
 categories: ["Game Studies", "Operations Research", "Engineering Education"]
-tags: ["Factory Automation", "Petri Nets", "Linear Programming", "Queueing Theory", "Discrete Event Simulation", "Theory of Constraints", game_ai, game_ai, game_ai, game_ai]
+tags: ["Factory_Automation", "Petri_Nets", "Linear_Programming", "Queueing_Theory", "Discrete_Event_Simulation", "Theory_of_Constraints", "game_ai", "game_ai", "game_ai", "game_ai"]
 research-date: [2026-04-18]
 ---
 

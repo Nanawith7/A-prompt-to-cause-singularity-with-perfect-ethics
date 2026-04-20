@@ -4,7 +4,7 @@ description: "A technical mapping of three code quality principles (semantic den
 author: "Nanawith7"
 layout: default
 categories: ["software engineering", "code quality", "LLM evaluation"]
-tags: ["information theory", information_density, "code metrics", "non-destructive flexibility", "cohesion", "coupling", llm_code_generation]
+tags: ["information_theory", information_density, "code_metrics", "non-destructive_flexibility", "cohesion", "coupling", llm_code_generation]
 ---
 
 ## 1. Abstract

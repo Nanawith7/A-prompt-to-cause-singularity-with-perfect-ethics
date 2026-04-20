@@ -4,7 +4,7 @@ description: "A conceptual analysis of 'We framing' as a relational ontology shi
 author: "Nanawith7"
 layout: default
 categories: ["Cognitive Framing", "Human-AI Interaction", "Cooperation Theory"]
-tags: ["We framing", "psychological safety", "groupthink", "conflict resolution", "linguistic framing"]
+tags: ["We_framing", "psychological_safety", "groupthink", "conflict_resolution", "linguistic_framing"]
 ---
 
 # We framing of AIs – sometimes it works

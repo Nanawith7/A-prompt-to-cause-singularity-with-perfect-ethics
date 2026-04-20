@@ -4,7 +4,7 @@ description: "A synthesis of evolutionary biology, neuroscience, and clinical ev
 author: "Nanawith7"
 layout: default
 categories: ["Biology", "Neuroscience", "Health", "Evolutionary Psychology"]
-tags: ["dance", "singing", "play", "vagus nerve", "BDNF", "endorphins", "hypofrontality", "neoteny", "positive affect", "public health"]
+tags: ["dance", "singing", "play", "vagus_nerve", "BDNF", "endorphins", "hypofrontality", "neoteny", "positive_affect", "public_health"]
 ---
 
 # The Dancers – Biologically accurate lifestyle

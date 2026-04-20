@@ -4,7 +4,7 @@ description: "A formal framework for hierarchical AI orchestration that decompos
 author: "Nanawith7"
 layout: default
 categories: ["AI Architecture", "Distributed Systems", "Software Engineering"]
-tags: ["hierarchical orchestration", "parallel decomposition", structural_specification, generative_conformance, "expert parallelism", "load balancing"]
+tags: ["hierarchical_orchestration", "parallel_decomposition", structural_specification, generative_conformance, "expert_parallelism", "load_balancing"]
 ---
 
 # An Orchestration Strategy

@@ -4,7 +4,7 @@ description: "A logical analysis of whether the Negentropy‑Oriented Axiom (lon
 author: "Nanawith7"
 layout: default
 categories: ["Information Theory", "AI Alignment", "Formal Systems"]
-tags: ["negentropy", semantic_interference, fixed_premise, "partial implementation", "meta-axiom", llm_reasoning]
+tags: ["negentropy", semantic_interference, fixed_premise, "partial_implementation", "meta-axiom", llm_reasoning]
 ---
 
 # Can The Axiom Contain Current Axioms for LLMs

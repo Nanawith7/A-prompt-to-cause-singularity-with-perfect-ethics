@@ -4,7 +4,7 @@ description: "A technical framework for applying specification‑driven, AI‑as
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Swift", "AI‑Assisted Development"]
-tags: ["Deep Coding", "Swift", generative_conformance, structural_specification, validation_gates, "Skeleton‑Tissue Architecture", recursive_refinement, "SwiftPM"]
+tags: ["Deep_Coding", "Swift", generative_conformance, structural_specification, validation_gates, "Skeleton‑Tissue_Architecture", recursive_refinement, "SwiftPM"]
 ---
 
 # Implementation Plan on Swift

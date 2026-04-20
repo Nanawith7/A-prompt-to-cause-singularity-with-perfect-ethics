@@ -4,7 +4,7 @@ description: "A systematic synthesis of empirical evidence examining the relatio
 author: "Nanawith7"
 layout: default
 categories: ["AI Literacy", "Second Language Acquisition", "Cognitive Science", "Prompt Engineering"]
-tags: ["multilingualism", "metalinguistic awareness", "prompt design", "cognitive flexibility", "far transfer", "AI execution skills", "translanguaging"]
+tags: ["multilingualism", "metalinguistic_awareness", "prompt_design", "cognitive_flexibility", "far_transfer", "AI_execution_skills", "translanguaging"]
 research-date: ["2026-04-13"]
 ---
 

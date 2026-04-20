@@ -4,7 +4,7 @@ description: "A technical evaluation of Spec-Driven Development (SDD) versus tra
 author: "Nanawith7"
 layout: default
 categories: ["AI Engineering", "Software Architecture"]
-tags: ["Spec-Driven Development", "Context Engineering", "AI Coding Agents", "Codebase Architecture"]
+tags: ["Spec-Driven_Development", "Context_Engineering", "AI_Coding_Agents", "Codebase_Architecture"]
 ---
 
 # Is Spec Driven Better

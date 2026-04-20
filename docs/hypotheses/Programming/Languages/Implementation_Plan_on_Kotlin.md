@@ -4,7 +4,7 @@ description: "A technical framework for applying specification-driven, AI-assist
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Kotlin", "AI-Assisted Development"]
-tags: ["Deep Coding", programming_languages, generative_conformance, structural_specification, "KSP", "KotlinPoet", validation_gates, recursive_refinement]
+tags: ["Deep_Coding", "programming_languages", generative_conformance, structural_specification, "KSP", "KotlinPoet", validation_gates, recursive_refinement]
 ---
 
 # Implementation Plan on Kotlin

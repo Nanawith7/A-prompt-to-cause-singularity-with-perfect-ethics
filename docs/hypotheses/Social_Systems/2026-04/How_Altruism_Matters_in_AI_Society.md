@@ -4,7 +4,7 @@ description: "A synthesis of empirical findings on the relationship between pros
 author: "Nanawith7"
 layout: default
 categories: ["AI Economics", "Labor Studies", "Behavioral Science"]
-tags: ["altruism", "generative AI", "labor market", "non-cognitive skills", "institutional change", productivity, "cooperation"]
+tags: ["altruism", "generative_AI", "labor_market", "non-cognitive_skills", "institutional_change", productivity, "cooperation"]
 research-date: ["2026-04-18"]
 ---
 

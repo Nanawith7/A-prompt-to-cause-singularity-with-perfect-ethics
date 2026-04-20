@@ -4,7 +4,7 @@ description: "Analysis of attention steering, context purification, persona supp
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "LLM Evaluation", "Attention Mechanism"]
-tags: ["Context Purification", "Attention Steering", cognitive_bias, instruction_following, "Prompt Robustness", "Zero-shot Reasoning", "Context Distraction"]
+tags: ["Context_Purification", "Attention_Steering", cognitive_bias, instruction_following, "Prompt_Robustness", "Zero-shot_Reasoning", "Context_Distraction"]
 research-date: 2026-04-15
 ---
 

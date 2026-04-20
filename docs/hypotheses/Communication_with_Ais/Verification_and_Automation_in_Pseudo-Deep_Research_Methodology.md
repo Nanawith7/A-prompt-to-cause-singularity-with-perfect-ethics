@@ -4,7 +4,7 @@ description: "A technical synthesis of formal verification layers, structural an
 author: "Nanawith7"
 layout: default
 categories: ["LLM Research Methodology", "Formal Verification", "Automated Reasoning"]
-tags: ["Pseudo-Deep Research", "structural validation", "self-correction", "state-machine control", "anomaly detection"]
+tags: ["Pseudo-Deep_Research", "structural_validation", "self-correction", "state-machine_control", "anomaly_detection"]
 ---
 
 # Verification and Automation in Pseudo-Deep Research Methodology

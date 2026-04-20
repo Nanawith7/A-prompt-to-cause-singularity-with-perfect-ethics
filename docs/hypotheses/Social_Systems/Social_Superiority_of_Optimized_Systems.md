@@ -4,7 +4,7 @@ description: "An analysis of how resource-efficient structures demonstrate persi
 author: "Nanawith7"
 layout: default
 categories: ["Complex Systems", "Optimization Theory", "Social Evolution"]
-tags: ["Resource Efficiency", "Structural Optimization", free_energy_principle, "Convergent Evolution", "Information Compression"]
+tags: ["Resource_Efficiency", "Structural_Optimization", free_energy_principle, "Convergent_Evolution", "Information_Compression"]
 research-date: ["2026-04-11"]
 ---
 

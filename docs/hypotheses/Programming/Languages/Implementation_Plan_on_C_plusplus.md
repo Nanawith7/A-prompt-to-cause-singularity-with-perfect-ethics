@@ -4,7 +4,7 @@ description: "A technical framework for applying Deep Coding methodology to C++ 
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "C++", "AI-Assisted Development"]
-tags: ["Deep Coding", programming_languages, structural_specification, generative_conformance, skeleton_tissue_architecture, "CMake", "C++20 Modules", "Template Metaprogramming"]
+tags: ["Deep_Coding", "programming_languages", structural_specification, generative_conformance, skeleton_tissue_architecture, "CMake", "C++20_Modules", "Template_Metaprogramming"]
 ---
 
 # Implementation Plan on C++

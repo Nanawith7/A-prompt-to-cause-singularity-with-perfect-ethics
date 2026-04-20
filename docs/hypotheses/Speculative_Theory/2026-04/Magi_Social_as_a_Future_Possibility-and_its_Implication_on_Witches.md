@@ -4,7 +4,7 @@ description: "Structural analysis of AI-driven social reorganization toward esot
 author: "Nanawith7"
 layout: default
 categories: ["Sociotechnical Systems", "Organizational Anthropology", "AI and Society"]
-tags: ["AI Governance", "Esoteric Knowledge Organizations", "Meaning Economy", "Gender and Technology", "Witch Archetype", "Social Stratification"]
+tags: ["AI_Governance", "Esoteric_Knowledge_Organizations", "Meaning_Economy", "Gender_and_Technology", "Witch_Archetype", "Social_Stratification"]
 research-date: ["2026-04-17"]
 ---
 

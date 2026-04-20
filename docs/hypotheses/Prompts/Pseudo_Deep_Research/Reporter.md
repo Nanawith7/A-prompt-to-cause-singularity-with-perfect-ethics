@@ -4,7 +4,7 @@ description: "Specification for converting a given report into a technical, logi
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Technical Writing", "LLM Optimization"]
-tags: ["formatting", "structural transformation", "technical lexicon", "LLM readability", "context efficiency"]
+tags: ["formatting", "structural_transformation", "technical_lexicon", "LLM_readability", "context_efficiency"]
 ---
 
 以上の追加段階を含む全段階の調査結果を「」というタイトルで、かつ内容を"タイトルに基づいた論理体系の主体とその重要な関連"に絞り、詳細かつ客観的、事実に基づいた中立的な記述を主に、文章形式を的確に構造化(markdownの記述方式を最大限活用する)し、全ての引用部分を完全に省き、指定したメタデータ構造で、その実際のデータ(title、description、categories、tags)は文章の内容に一致したものに書き換え、タイトルを含む全文を英語で、1つのコードブロック内のコピー可能なmarkdownとして出力してくれ。LLMが読むことを考慮して、「意味を人間に説明するのに不足はなく、人間もおおよそ理解できるが、コンテキスト圧迫は可能な限り抑えられる長さ」で頼む

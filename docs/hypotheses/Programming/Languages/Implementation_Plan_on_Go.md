@@ -4,7 +4,7 @@ description: "A technical implementation plan for applying specification-driven 
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Go", "AI-Assisted Development"]
-tags: ["Deep Coding", programming_languages, structural_specification, generative_conformance, skeleton_tissue_architecture, validation_gates, recursive_refinement, fixed_premise, llm_code_generation]
+tags: ["Deep_Coding", "programming_languages", structural_specification, generative_conformance, skeleton_tissue_architecture, validation_gates, recursive_refinement, fixed_premise, llm_code_generation]
 ---
 
 # Implementation Plan on Go

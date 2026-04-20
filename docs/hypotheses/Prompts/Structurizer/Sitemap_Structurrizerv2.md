@@ -4,7 +4,7 @@ description: "An interactive, dialogue‑driven prompt framework for sequentiall
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "LLM Workflow", "Information Architecture"]
-tags: ["dialogue-driven", "sequential processing", "structured summary", "autonomous reference", "verifiability"]
+tags: ["dialogue-driven", "sequential_processing", "structured_summary", "autonomous_reference", "verifiability"]
 ---
 
 # 自律的参照構造の段階的構築プロトコル（対話駆動型）
