@@ -15,14 +15,14 @@ tags: ["formatting", "structural_transformation", "technical_lexicon", "LLM_read
 
 
 
-***注意:[メタデータ内部では絶対に半角スペース" "を利用せず、全てアンダースコア"_"で代替すること]***
+**注意:[{categories: "."、tags: "."の内部のみ、絶対に半角スペース" "を利用せず、記述ルールにしたがって全てアンダースコア"_"で代替する}こと。{本文、title、description、author、layout、research-dateにはこの処理は行わない}。]**
 ---
-title: "TITLE_TEXT"
-description: "Description_will_be_written_here."
-author: "Author_Name"
+title: "TITLE TEXT"
+description: "Description will be written here."
+author: "Nanawith7"
 layout: default
-categories: ["CATEGORY_A", "CATEGORY_B"]
-tags: ["TAG_A", "TAG_B", "TAG_C"]
+categories: ["Category_a", "Category_b"]
+tags: ["Tag_a", "Tag_b", "Tag_c"]
 research-date: [yyyy-mm-dd]
 ---
 また、もしタイトルの内容がズレていたら指摘し、さらにシンプルに構文や言葉選びを間違えていた場合は修正しておいてくれ
